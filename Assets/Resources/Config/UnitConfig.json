@@ -1,0 +1,123 @@
+{
+    "Player":{
+        "Type":0,
+        "BaseMoveSpeed":10
+
+    },
+    "_Worker_CashierA":{
+        "Type":1,
+        "BaseMoveSpeed":10,
+        "FollowRoutine": true,
+        "IsLoopInfinite":false,
+        "Routine":[
+            {
+                "CodeName":"CashierDesk_Process"
+            }
+        ]
+    },
+    "_Worker_CashierB":{
+        "Type":1,
+        "BaseMoveSpeed":10,
+        "FollowRoutine": true,
+        "IsLoopInfinite":true,
+        "Routine":[
+            {
+                "CodeName":"CashierDesk_Process"
+            }
+        ]
+    },
+    "_Worker_ShelfA":{
+        "Type":1,
+        "BaseMoveSpeed":10,
+        "FollowRoutine": true,
+        "IsLoopInfinite":true,
+        "Routine":[
+            {
+                "CodeName":"Shelf02_Tomato_Input"
+            },
+            {
+                "CodeName":"Shelf03_Egg_Small_Input"
+            },
+            {
+                "CodeName":"Shelf05_Fridge_Input"
+            },   
+            {
+                "CodeName":"Shelf04_FlourBag_Input"
+            },      
+            {
+                "CodeName":"Shelf06_Bread_Input"
+            },              
+            {
+                "CodeName":"Shelf07_Wheat_Input"
+            }
+        ]
+    },
+    "_Worker_FarmerA":{
+        "Type":1,
+        "BaseMoveSpeed":10,
+        "FollowRoutine": true,
+        "IsLoopInfinite":true,
+        "Routine":[
+            {
+                "CodeName":"Animal_Chicken2_Input"
+            },
+            {
+                "CodeName":"Animal_Chicken_Input"
+            },
+            {
+                "CodeName":"Animal_Cow_Input"
+            }
+        ]
+    },
+    "_Worker_ChefA":{
+        "Type":1,
+        "BaseMoveSpeed":10,
+        "FollowRoutine": true,
+        "IsLoopInfinite":true,
+        "Routine":[
+            {
+                "CodeName":"Machine_WheatMill_Input"
+            },
+            {
+                "CodeName":"Machine_Oven_Tabletop_Input"
+            }    
+            
+        ]
+    },
+    "stickman_Customer02":{
+        "Type":2,
+        "BaseMoveSpeed":10,
+        "FollowRoutine": true,
+        "Routine":[
+            {
+                "CodeName":"Shelf03_Egg_Small_Output",
+                "ItemCodeName":"egg",
+                "Quantity":1
+            },
+            {
+                "CodeName":"CashierDesk_Input"
+            }
+        ]
+    },
+    "stickman_Customer03":{
+        "Type":2,
+        "BaseMoveSpeed":10,
+        "FollowRoutine": true,
+        "Routine":[
+       
+            {
+                "CodeName":"Shelf02_Tomato_Output",
+                "ItemCodeName":"veg_Tomato",
+                "Quantity":1
+            },
+            {
+                "CodeName":"Shelf03_Egg_Small_Output",
+                "ItemCodeName":"egg",
+                "Quantity":1
+            },
+            {
+                "CodeName":"CashierDesk_Input"
+            }
+        ]
+    }
+}

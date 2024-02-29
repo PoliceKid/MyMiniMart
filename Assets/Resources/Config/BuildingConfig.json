@@ -1,0 +1,330 @@
+{
+    "CashierDesk": {
+        "Type":0,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [
+                {
+                    "CodeName": "anything"                 
+                }           
+            ],
+            "Output": [
+                {
+                    "CodeName": "cash",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    },
+    "Plant_Tomato": {
+        "Type":3,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [              
+            ],
+            "Output": [
+                {
+                    "CodeName": "veg_Tomato",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    }
+    ,
+    "Plant_Tomato2": {
+        "Type":3,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [              
+            ],
+            "Output": [
+                {
+                    "CodeName": "veg_Tomato",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    }
+    ,
+    "Plant_Tomato3": {
+        "Type":3,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [              
+            ],
+            "Output": [
+                {
+                    "CodeName": "veg_Tomato",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    }
+    ,
+    "Plant_Tomato4": {
+        "Type":3,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [              
+            ],
+            "Output": [
+                {
+                    "CodeName": "veg_Tomato",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    },
+    "Animal_Chicken": {
+        "Type":2,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [
+                {
+                    "CodeName": "veg_Tomato",
+                    "MaxSlot": 3
+                }
+            ],
+            "Output": [
+                {
+                    "CodeName": "egg",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    },
+    "Animal_Chicken2": {
+        "Type":2,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [
+                {
+                    "CodeName": "veg_Tomato",
+                    "MaxSlot": 3
+                }
+            ],
+            "Output": [
+                {
+                    "CodeName": "egg",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    },
+     "Animal_Cow": {
+        "Type":2,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [
+                {
+                    "CodeName": "veg_Wheat",
+                    "MaxSlot": 3
+                }
+            ],
+            "Output": [
+                {
+                    "CodeName": "milk",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    },
+    "Machine_WheatMill": {
+        "Type":1,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [
+                {
+                    "CodeName": "veg_Wheat",
+                    "MaxSlot": 3
+                }
+            ],
+            "Output": [
+                {
+                    "CodeName": "flourBag",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    },
+    "Machine_Oven_Tabletop": {
+        "Type":2,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [
+                {
+                    "CodeName": "egg",
+                    "MaxSlot": 3,
+                    "AmoutProcess":1
+                },
+                {
+                    "CodeName": "veg_Wheat",
+                    "MaxSlot": 3,
+                    "AmoutProcess":1
+                }
+            ],
+            "Output": [
+                {
+                    "CodeName": "bread",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    },
+    "Plant_Wheat1": {
+        "Type":3,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [              
+            ],
+            "Output": [
+                {
+                    "CodeName": "veg_Wheat",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    },
+    "Plant_Wheat2": {
+        "Type":3,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [              
+            ],
+            "Output": [
+                {
+                    "CodeName": "veg_Wheat",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    },
+    "Plant_Wheat3": {
+        "Type":3,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [              
+            ],
+            "Output": [
+                {
+                    "CodeName": "veg_Wheat",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    },
+    "Shelf03_Egg_Small": {
+        "Type":1,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [     
+                {
+                    "CodeName": "egg",
+                    "MaxSlot": 3,
+                    "AmoutProcess":3
+                }         
+            ],
+            "Output": [
+                
+            ]
+        }
+    },
+    "Shelf02_Tomato": {
+        "Type":1,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [     
+                {
+                    "CodeName": "veg_Tomato",
+                    "MaxSlot": 3,
+                    "AmoutProcess":3
+                }         
+            ],
+            "Output": [
+                
+            ]
+        }
+    },
+    "Shelf05_Fridge": {
+        "Type":1,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [     
+                {
+                    "CodeName": "milk",
+                    "MaxSlot": 3,
+                    "AmoutProcess":3
+                }         
+            ],
+            "Output": [
+                 
+            ]
+        }
+    },
+    "Shelf04_FlourBag": {
+        "Type":1,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [     
+                {
+                    "CodeName": "flourBag",
+                    "MaxSlot": 3,
+                    "AmoutProcess":3
+                }         
+            ],
+            "Output": [
+                 
+            ]
+        }
+    },
+    "Shelf07_Wheat": {
+        "Type":1,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [     
+                {
+                    "CodeName": "veg_Wheat",
+                    "MaxSlot": 3,
+                    "AmoutProcess":3
+                }         
+            ],
+            "Output": [
+                
+            ]
+        }
+    },
+    "Shelf06_Bread": {
+        "Type":1,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [     
+                {
+                    "CodeName": "bread",
+                    "MaxSlot": 3,
+                    "AmoutProcess":3
+                }         
+            ],
+            "Output": [
+                
+            ]
+        }
+    },
+    "Machine_Blender": {
+        "Type":2,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [
+                {
+                    "CodeName": "veg_Tomato",
+                    "MaxSlot": 3
+                }
+            ],
+            "Output": [
+                {
+                    "CodeName": "tomatoSauce",
+                    "MaxSlot": 3
+                }
+            ]
+        }
+    }
+}
