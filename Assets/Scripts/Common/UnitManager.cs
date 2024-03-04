@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 public class UnitManager : MonoBehaviour
 {
     [SerializeField]
     private List<Transform> existedUnit;
+    [SerializeField] List<Transform> ExitPoints;
     public static UnitManager Instance { get; private set; }
     private bool hasInit;
 
@@ -17,6 +19,7 @@ public class UnitManager : MonoBehaviour
         if (Instance == null)
             Instance = this;
         hasInit = true;
+        RegisterEvent();
     }
 
     public void AddUnit(UnitView unitView)
@@ -32,6 +35,16 @@ public class UnitManager : MonoBehaviour
             }
         }
     }
+    public void RegisterEvent()
+    {
+        CashierDeskController.OnUnitFinishRoutine += HandleUnitFinishRoutine;
+    }
+
+    private void HandleUnitFinishRoutine(UnitController unit)
+    {
+        unit.FinishRoutine(GetExitPoint().position);
+    }
+
     private void Update()
     {
         Tick();
@@ -51,5 +64,10 @@ public class UnitManager : MonoBehaviour
     public List<Transform> GetExistedUnit()
     {
         return existedUnit;
+    }
+    public Transform GetExitPoint()
+    {
+        int randomIndex = UnityEngine.Random.Range(0, ExitPoints.Count);
+        return ExitPoints[randomIndex];
     }
 }

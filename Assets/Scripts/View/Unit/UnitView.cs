@@ -14,17 +14,18 @@ public class UnitView : MonoBehaviour
     #endregion
     #region DATA
     public UnitController unitController { get; private set; }
-    public UnitMovementController UnitMovement { get; private set; }
+    public IMovement UnitMovement { get; private set; }
     public UnitAnimationController UnitAnimation{ get; private set; }
+    
     #endregion
     #region INIT FUNCTIONS
-    public void Init(UnitController unitController, Vector3 startingPosition)
+    public virtual void Init(UnitController unitController, Vector3 startingPosition)
     {
         this.unitController = unitController;
         RegisterEvents(unitController);
         LoadModel(unitController.unitData.CodeName);
 
-        UnitMovement = GetComponent<UnitMovementController>();
+        UnitMovement = GetComponent<IMovement>();
         UnitAnimation = GetComponent<UnitAnimationController>();
         // Init Movement
         UnitMovement.Init();
@@ -43,7 +44,7 @@ public class UnitView : MonoBehaviour
     {
 
         //unitData.OnTargetBuildingSet += HandleTargetBuildingSet;
-        unit.CheckDestinationReached = () => UnitMovement.ReachedDestination;
+        unit.CheckDestinationReached = () => UnitMovement.ReachedDestination();
     }
     protected void UnRegisterEvents(UnitDataModel unitData)
     {
@@ -103,7 +104,7 @@ public class UnitView : MonoBehaviour
     }
     public void SetTargetMovePosition(Vector3 position, AnimationType animationType)
     {
-        UnitMovement.MoveTo(position);
+        UnitMovement.HandleMovement(position);
         ChangeState(animationType.ToString());
     }
     public void ChangeState(string newState)
@@ -119,4 +120,13 @@ public enum AnimationType
     Run_Carry =1,
     Run =2,
     Idle_Happy_Carry =3
+}
+public interface IMovement
+{
+    public void Init();
+    public void HandleMovement(Vector3 movePosition);
+    public void SetSpeed(float value);
+    public bool ReachedDestination();
+    public void SetPosition(Vector3 pos);
+    public Vector3 GetMovementDir();
 }

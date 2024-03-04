@@ -46,12 +46,8 @@ public class CommandBuilding
             Commands.Add(command);
         }
     }
-    public void CompeleteSupportCommand(bool isComplete)
-    {
-        IsComplete = isComplete;
-    }
-    public bool IsCommpleteAllSupportCommand => Commands.All(x => x.IsComplete);
-    public void CommpleteAllSupportCommand(bool isComplete)
+    public bool IsCommpleteAllCommand => Commands.All(x => x.IsComplete);
+    public void CommpleteAllCommand(bool isComplete)
     {
         foreach (var item in Commands)
         {

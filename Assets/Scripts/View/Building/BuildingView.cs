@@ -14,7 +14,8 @@ public class BuildingView : MonoBehaviour
     [SerializeField]
     public GameObject ModelProcess;
     [SerializeField]
-    public Transform InputWorkerSlot;
+    public Transform DummySpawnPos;
+   
 
     [SerializeField]
     public List<SlotContainer> InputItemSlots = new List<SlotContainer>();
@@ -22,7 +23,6 @@ public class BuildingView : MonoBehaviour
     public List<SlotContainer> OutputItemSlots = new List<SlotContainer>();
     [SerializeField]
     public List<SlotContainer> ActionSlots = new List<SlotContainer>();
-
     #endregion
 
     protected GameObject model;
@@ -39,13 +39,20 @@ public class BuildingView : MonoBehaviour
         if (IsLocked) return;
        
         sequence = DOTween.Sequence();
+        InitSpawnEffect();
     }
-    
+    private void InitSpawnEffect()
+    {
+        transform.localScale = Vector3.one * 0.2f;
+        transform.DOScale(Vector3.one, 1f).SetEase(Ease.InOutElastic);
+    }
     public virtual void InitPlaceHolder()
     {
         CodeName = gameObject.name;
+
         foreach (SlotContainer slotContainer in InputItemSlots)
         {
+            slotContainer.Init();
             foreach (Transform item in slotContainer.SlotsContainer)
             {
                 item.transform.parent = this.transform;
@@ -54,6 +61,7 @@ public class BuildingView : MonoBehaviour
         }
         foreach (SlotContainer slotContainer in OutputItemSlots)
         {
+            slotContainer.Init();
             foreach (Transform item in slotContainer.SlotsContainer)
             {
                 item.transform.parent = this.transform;
@@ -62,6 +70,7 @@ public class BuildingView : MonoBehaviour
         }
         foreach (SlotContainer slotContainer in ActionSlots)
         {
+            slotContainer.Init();
             foreach (Transform item in slotContainer.SlotsContainer)
             {
                 item.transform.parent = this.transform;
@@ -128,26 +137,41 @@ public class BuildingView : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("trigger unit");
-        UnitView unitView = other.GetComponentInParent<UnitView>();
-        if(unitView != null)
-        {
-            if (!unitView.unitController.unitData.IsPlayer) return;
-            unitView.AddItemToBuilding(this);
-            unitView.GetItemFromBuilding(this);
-        }
+        //Debug.Log("trigger unit");
+        //UnitView unitView = other.GetComponentInParent<PlayerView>();
+        //if(unitView != null)
+        //{
+        //    if (!unitView.unitController.unitData.IsPlayer) return;
+        //    unitView.AddItemToBuilding(this);
+        //    unitView.GetItemFromBuilding(this);
+        //}
     }
-
+    public SlotContainer FindNearestActionPoint(Vector3 playerPosition)
+    {    
+        SlotContainer nearestActionPoint = ActionSlots
+            .OrderBy(ap => Vector3.Distance(playerPosition, ap.ContainerPoint.position))
+            .FirstOrDefault();
+        return nearestActionPoint;
+    }
 }
 [System.Serializable]
 public class SlotContainer
 {
     [SerializeField]
     public string CodeName;
+ 
     public List<Transform> SlotsContainer;
+    public Transform ContainerPoint { get; private set; }
+    public void Init()
+    {
+        ContainerPoint = SlotsContainer[0];
+        //SphereCollider ContainerCollider = ContainerPoint.gameObject.AddComponent<SphereCollider>();
+        //ContainerCollider.radius = 0.025f;
+        //ContainerCollider.isTrigger = true;
+    }
     public void Init(int high)
     {
-       
+      
         var ItemSlotsContainerTemp = SlotsContainer.ToList();
         foreach (var item in ItemSlotsContainerTemp)
         {
@@ -163,3 +187,4 @@ public class SlotContainer
        
     }
 }
+

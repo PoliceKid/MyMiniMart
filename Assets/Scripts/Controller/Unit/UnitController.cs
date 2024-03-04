@@ -6,7 +6,7 @@ using System;
 
 public class UnitController : IOccupier
 {
-    private UnitView unitView;
+    protected UnitView unitView;
     public UnitDataModel unitData { get; private set; }
     public UnitConfig unitConfig { get; private set; }
 
@@ -172,12 +172,10 @@ public class UnitController : IOccupier
     {
         if (unitData.IsCompleteRoutine && !unitConfig.IsLoopInfinite) return;
         if (GetActiveRoutineCommand() == null) return;
-        //CommandData nextCommand = GetNextCommand();
-        // have nextCommand -> Start active command.
         if (nextCommand != null)
         {
             unitData.SetMainActiveCommand(nextCommand);
-            StartActiveCommand(nextCommand);
+            StartActiveCommand(nextCommand);         
         }        
     }
     public virtual CommandData GetNextCommand()
@@ -188,7 +186,10 @@ public class UnitController : IOccupier
         // If Compelete Routine command -> Next routine command -> Next support command
         if (activeCommandTemp.IsComplete)
         {
+            //Complete Active routine command and all support Command before next Routine command 
             GetActiveRoutineCommand().CompleteCommand(false);
+            unitData.CompleteAllSupportCommand(activeCommandTemp);
+
             CommandData nextRoutineCommand = NextRoutineCommand();
             if(nextRoutineCommand != null)
             nextCommand = NextSupportCommand(nextRoutineCommand);
@@ -198,24 +199,18 @@ public class UnitController : IOccupier
         {
             if (unitData.IsCompleteSupportCommand(activeCommandTemp) || unitData.IsFullItemCarry)
             {
-                unitData.CompleteSupportCommand(activeCommandTemp);
+                //GetActiveRoutineCommand().CompleteCommand(true);
                 nextCommand = activeCommandTemp;
                 //Complete Active routine command
-                GetActiveRoutineCommand().CompleteCommand(true);
+               
             }
             else
             {
-                // If unit chưa đầy slot carry;
-                // 
-                nextCommand = NextSupportCommand(activeCommandTemp);
-                if(nextCommand!= null)
-                {
-                    nextCommand.CompleteCommand(true);
-                }
-                
-                //else
+                // If not complete Support command
+                nextCommand = NextSupportCommand(activeCommandTemp);                       
             }
         }
+    
         return nextCommand;
     }
     public virtual CommandData GetActiveRoutineCommand()
@@ -278,7 +273,7 @@ public class UnitController : IOccupier
                 return targetBuilding != null ?
                     targetBuilding.BuildingData.GetTotalCountItem(ItemSlotType.Output) : 0; // Hoặc giá trị mặc định khác tùy thuộc vào logic của bạn
             }).
-                ThenBy(y => GetTargetBuilding(y).BuildingData.GetUnitJoinQueue(ActionType.Output)).ThenByDescending(z => !z.IsComplete).ToList();
+                ThenBy(y => GetTargetBuilding(y).BuildingData.GetTotalUnitJoinQueue(ActionType.Output)).ThenByDescending(z => !z.IsComplete).ToList();
             return listCommandSupport.Count > 0 ? listCommandSupport.First() : null;
         }
         return null;
@@ -289,7 +284,8 @@ public class UnitController : IOccupier
         
         CommandData supportCommandPriority = GetNextSupportCommand(routineActiveCommand.CodeName);
         if (supportCommandPriority != null)
-        {            
+        {
+            unitData.CompleteSupportCommand(true);
             unitData.SetSupportedActiveCommanData(supportCommandPriority);
             return supportCommandPriority;
         }
@@ -359,7 +355,7 @@ public class UnitController : IOccupier
     {       
         unitData.SetState(UnitState.Destinationing);
     }
-    public void HandleDestinationing()
+    public virtual void HandleDestinationing()
     {
         if (CheckDestinationReached())
         {
@@ -424,6 +420,11 @@ public class UnitController : IOccupier
             default:
                 break;
         }
+        // After actioning complete command
+        if (activeCommand != null)
+        {
+            activeCommand.CompleteCommand(true);
+        }
         if (IsCompleteCommand(activeCommand))
         {
             if (unitData.TargetBuilding != null)
@@ -437,6 +438,9 @@ public class UnitController : IOccupier
     public virtual void HandleGetItemFromBuilding(CommandData targetCommand ,BuildingController buildingController)
     {
         GetItemFromBuilding(buildingController);
+    }
+    public virtual void FinishRoutine(Vector3 exitPoint)
+    {
     }
     #endregion
 }

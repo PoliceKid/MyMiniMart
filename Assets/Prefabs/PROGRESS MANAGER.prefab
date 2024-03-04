@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &62228427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 62228428}
+  m_Layer: 0
+  m_Name: OutputSlots (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &62228428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62228427}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.01, y: 0.0045, z: 0.074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1023349034}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &482360254
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +130,37 @@ Transform:
   m_Father: {fileID: 141054474046090898}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &778755293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 778755294}
+  m_Layer: 0
+  m_Name: OutputSlots (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &778755294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778755293}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.01, y: 0.0045, z: 0.074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1023349034}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &850959281
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +191,105 @@ Transform:
   m_Children: []
   m_Father: {fileID: 686113052}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &981446861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 981446862}
+  m_Layer: 0
+  m_Name: OutputSlots (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &981446862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981446861}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.01, y: 0.0045, z: 0.088}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1023349034}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1021053204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1021053205}
+  m_Layer: 0
+  m_Name: OutputSlots (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &1021053205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021053204}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.01, y: 0.0045, z: 0.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1023349034}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1023349033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1023349034}
+  m_Layer: 0
+  m_Name: Mat_Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &1023349034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023349033}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.01, y: 0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2067873621}
+  - {fileID: 62228428}
+  - {fileID: 1610457482}
+  - {fileID: 981446862}
+  - {fileID: 778755294}
+  - {fileID: 1021053205}
+  m_Father: {fileID: 7408522801600376603}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1561090565
 GameObject:
@@ -192,6 +353,37 @@ Transform:
   m_Father: {fileID: 686113052}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1610457481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1610457482}
+  m_Layer: 0
+  m_Name: OutputSlots (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &1610457482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610457481}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.01, y: 0.0045, z: 0.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1023349034}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1783844950
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,6 +414,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 686113052}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2067873620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067873621}
+  m_Layer: 0
+  m_Name: OutputSlots
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &2067873621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067873620}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.01, y: 0.0045, z: 0.088}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1023349034}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1277345719682451
 GameObject:
@@ -668,7 +891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4532482361856867997}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRBLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -831,7 +1054,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7280620546855693678}
   - component: {fileID: 7637534278966143579}
-  m_Layer: 0
+  - component: {fileID: 8669882605850790027}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -908,6 +1132,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008930247, y: 0.00067790877, z: 0.01633237}
     m_Extent: {x: 0.015337976, y: 0.012829429, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &8669882605850790027
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84211440906744018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03067596, y: 0.03263502, z: 0.02565887}
+  m_Center: {x: -0.00089304714, y: 0.016332367, z: -0.00067791075}
 --- !u!1 &85382892215335417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,9 +1988,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &192384479513531886
 GameObject:
@@ -1978,7 +2215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 324092508731791127}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRBLegAnkle_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2059,10 +2296,10 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 8072075794659398166}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: veg_Tomato
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 962038030570140499}
     - {fileID: 7301361617161348483}
     - {fileID: 5498857622284982748}
@@ -2071,9 +2308,9 @@ MonoBehaviour:
     - {fileID: 5743959298394021200}
     - {fileID: 412506856448903271}
     - {fileID: 7338716788922673694}
-  OutputItemSlotPlaceHolders:
+  OutputItemSlots:
   - CodeName: egg
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 6647196440188871026}
     - {fileID: 171146841679135699}
     - {fileID: 4294269330430699821}
@@ -2082,7 +2319,13 @@ MonoBehaviour:
     - {fileID: 3035408053867209631}
     - {fileID: 904285919011165665}
     - {fileID: 5408521778058227175}
-  ActionSlots: []
+  ActionSlots:
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 4157929530893622470}
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 5174860695002055040}
 --- !u!65 &652144705233663793
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2143,9 +2386,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &261597234028392650
 GameObject:
@@ -2702,7 +2945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1134914518747711400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRBLegPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2878,9 +3121,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!65 &280422631
 BoxCollider:
@@ -2978,9 +3221,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!65 &1771119140
 BoxCollider:
@@ -3561,7 +3804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8778847436276224104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLBLegAnkle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4000,9 +4243,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!65 &538142485
 BoxCollider:
@@ -4028,7 +4271,7 @@ GameObject:
   - component: {fileID: 3272121258536108230}
   - component: {fileID: 1696882418305715710}
   - component: {fileID: 3939051577434343034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelf02.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4241,9 +4484,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &577021487465100871
 GameObject:
@@ -4696,13 +4939,16 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 8158507996433242715}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots:
   - CodeName: veg_Wheat
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 6496386228339134315}
-  ActionSlots: []
+  ActionSlots:
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 2137003417274256564}
 --- !u!65 &1677334073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4893,9 +5139,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!65 &122160613
 BoxCollider:
@@ -5167,7 +5413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3517753246287941756}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRBLeg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5325,7 +5571,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4310356425588217225}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRibcage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5811,7 +6057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4487431614038876507}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6562,7 +6808,7 @@ GameObject:
   - component: {fileID: 3941795605267762218}
   - component: {fileID: 2182823465498673823}
   - component: {fileID: 6047337371855867279}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashierDesk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7262,7 +7508,7 @@ GameObject:
   - component: {fileID: 5010291943131732727}
   - component: {fileID: 3769939217105579107}
   - component: {fileID: 2350253017984836216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fridge01.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7602,7 +7848,7 @@ GameObject:
   - component: {fileID: 4809726442556559119}
   - component: {fileID: 7458656609203820435}
   - component: {fileID: 3376769559885412485}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelf06.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8585,9 +8831,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &1139545537495437722
 GameObject:
@@ -8665,7 +8911,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9095595187679405331}
-  m_Layer: 0
+  - component: {fileID: 543760329636402302}
+  m_Layer: 6
   m_Name: shelf06_Bread
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8690,6 +8937,19 @@ Transform:
   m_Father: {fileID: 4705234444022783436}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &543760329636402302
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150137233563238131}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.083859235, y: 0.08, z: 0.04794545}
+  m_Center: {x: -0.00074635504, y: 0.04, z: -0.0039727255}
 --- !u!1 &1154582741963246831
 GameObject:
   m_ObjectHideFlags: 0
@@ -9282,9 +9542,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!65 &1928330167
 BoxCollider:
@@ -9380,9 +9640,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &1228042673420014063
 GameObject:
@@ -9555,7 +9815,8 @@ GameObject:
   m_Component:
   - component: {fileID: 19459258577274693}
   - component: {fileID: 1986732121829334876}
-  m_Layer: 0
+  - component: {fileID: 7191183745602214800}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9632,6 +9893,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008930182, y: 0.0006779684, z: 0.01633237}
     m_Extent: {x: 0.01533798, y: 0.012829433, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &7191183745602214800
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277547997005318520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030675981, y: 0.03263502, z: 0.02565889}
+  m_Center: {x: -0.00089301285, y: 0.016332367, z: -0.0006779705}
 --- !u!1 &1279211143971976652
 GameObject:
   m_ObjectHideFlags: 0
@@ -10288,7 +10562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7669371465735127829}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRFLeg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11005,7 +11279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9122670639777318955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigPelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11263,7 +11537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5868023884657843550}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLFLegAnkle_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12588,7 +12862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3227741967577315659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigPelvisGizmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12826,10 +13100,10 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: veg_Wheat
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 3191628914614388521}
     - {fileID: 2495892438179006422}
     - {fileID: 1416668420160025179}
@@ -12845,11 +13119,17 @@ MonoBehaviour:
     - {fileID: 4555624376240648174}
     - {fileID: 4816210720947273257}
     - {fileID: 4526622885255940901}
-  OutputItemSlotPlaceHolders: []
+  OutputItemSlots: []
   ActionSlots:
   - CodeName: Input
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 6921014876080727894}
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 3281394494471764908}
+    - {fileID: 7296024990503838203}
+    - {fileID: 4447709165831016599}
+    - {fileID: 1546378220069990745}
 --- !u!65 &5555241483962105249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13334,7 +13614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8830056435631277014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRFLegPlatform_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13459,7 +13739,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4215845670536442075}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail2Gizmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14894,12 +15174,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CodeName: 
-  IsLocked: 1
+  IsLocked: 0
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: bread
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 831391064482672061}
     - {fileID: 4264520440873962955}
     - {fileID: 4560079119248847146}
@@ -14912,8 +15192,17 @@ MonoBehaviour:
     - {fileID: 8175159816578003290}
     - {fileID: 8044875651738757569}
     - {fileID: 5548121976400920004}
-  OutputItemSlotPlaceHolders: []
-  ActionSlots: []
+  OutputItemSlots: []
+  ActionSlots:
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 5461821187384080042}
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 7527687387213821434}
+    - {fileID: 2309832836450839468}
+    - {fileID: 6050703175987956904}
+    - {fileID: 5958826656921571507}
 --- !u!65 &737457652
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14936,8 +15225,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3821036603667618016}
+  - component: {fileID: 6674765938935918030}
+  - component: {fileID: 4170759752305382146}
   m_Layer: 0
-  m_Name: TrashBin (2)
+  m_Name: TrashBin 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14961,6 +15252,44 @@ Transform:
   m_Father: {fileID: 7928488908813529754}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6674765938935918030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093313088316260706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f68f285dfaffa2489b2fb181e42f9c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CodeName: TrashBin 2
+  IsLocked: 0
+  ModelProcess: {fileID: 0}
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
+  - CodeName: anything
+    SlotsContainer:
+    - {fileID: 3721479823834344833}
+  OutputItemSlots: []
+  ActionSlots:
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 6104071213998204611}
+--- !u!65 &4170759752305382146
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093313088316260706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.03, z: 0.05}
+  m_Center: {x: 0, y: 0.015, z: 0}
 --- !u!1 &2095455910633367056
 GameObject:
   m_ObjectHideFlags: 0
@@ -15355,7 +15684,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6900898064952414509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLFLegPlatform_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15702,7 +16031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 351162201705681197}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLFLeg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15865,7 +16194,7 @@ GameObject:
   - component: {fileID: 8205647062880850466}
   - component: {fileID: 8931843042668869429}
   - component: {fileID: 4330058387342388610}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelf04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16261,9 +16590,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!65 &1482896874
 BoxCollider:
@@ -16657,7 +16986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6981775262265137769}
   - component: {fileID: 2740694666403832829}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17361,9 +17690,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!65 &1894957889
 BoxCollider:
@@ -17992,7 +18321,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4560333757856027036}
-  m_Layer: 0
+  - component: {fileID: 6399442871728513763}
+  m_Layer: 6
   m_Name: cashierDesk (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18017,6 +18347,19 @@ Transform:
   m_Father: {fileID: 7408522801600376603}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6399442871728513763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2588225180265911396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.17167766, y: 0.05, z: 0.038625386}
+  m_Center: {x: 0.00023466109, y: 0.025, z: -0.00041740775}
 --- !u!1 &2601071134712712421
 GameObject:
   m_ObjectHideFlags: 0
@@ -18181,7 +18524,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7241341220029733920}
-  m_Layer: 0
+  - component: {fileID: 2477804747521269641}
+  m_Layer: 6
   m_Name: cow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18215,6 +18559,19 @@ Transform:
   m_Father: {fileID: 4239963146322846578}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2477804747521269641
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619656879692014129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.045908187, z: 0.079301216}
+  m_Center: {x: 1.7960963e-10, y: 0.02000465, z: 0.0047099567}
 --- !u!1 &2623950506795418032
 GameObject:
   m_ObjectHideFlags: 0
@@ -18257,7 +18614,7 @@ GameObject:
   - component: {fileID: 6309158158453080433}
   - component: {fileID: 134490933175681163}
   - component: {fileID: 4860400921061352784}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelf03.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19193,10 +19550,10 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: milk
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 4644807814570169539}
     - {fileID: 3530520942243053756}
     - {fileID: 3651977237892141431}
@@ -19209,8 +19566,17 @@ MonoBehaviour:
     - {fileID: 8670849521328314556}
     - {fileID: 9183959409026102712}
     - {fileID: 3805051541649094349}
-  OutputItemSlotPlaceHolders: []
-  ActionSlots: []
+  OutputItemSlots: []
+  ActionSlots:
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 5472623190160408561}
+    - {fileID: 2824623007632962452}
+    - {fileID: 981269799709106894}
+    - {fileID: 5191705786713112852}
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 389342268899793436}
 --- !u!65 &1700950903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20268,13 +20634,16 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 2623950506795418032}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots:
   - CodeName: veg_Wheat
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 1591900763253949406}
-  ActionSlots: []
+  ActionSlots:
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 4493114400115295467}
 --- !u!65 &1825876410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20340,16 +20709,16 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 2623950506795418032}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots:
   - CodeName: veg_Wheat
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 4374637034576417598}
   ActionSlots:
   - CodeName: Output
-    ItemSlotsContainer:
-    - {fileID: 4374637034576417598}
+    SlotsContainer:
+    - {fileID: 5181941359685945805}
 --- !u!65 &300800134
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20529,7 +20898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3671345599600562628}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21036,10 +21405,10 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: egg
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 1854998751027159727}
     - {fileID: 4352817654823202842}
     - {fileID: 8756874011313150474}
@@ -21049,13 +21418,13 @@ MonoBehaviour:
     - {fileID: 9064982399573408155}
     - {fileID: 2116469284420339614}
     - {fileID: 8384774173456104401}
-  OutputItemSlotPlaceHolders: []
+  OutputItemSlots: []
   ActionSlots:
   - CodeName: Input
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 432494286683853756}
   - CodeName: Output
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 636328266350730116}
     - {fileID: 7186986084236354299}
     - {fileID: 1857675031916763774}
@@ -21068,7 +21437,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3080774572306713370}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.08, z: 0.1}
@@ -21367,7 +21736,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1858560238965615536}
   - component: {fileID: 3781511783048392546}
-  m_Layer: 0
+  - component: {fileID: 4628368479054915091}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21444,6 +21814,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008929884, y: 0.0006779758, z: 0.01633237}
     m_Extent: {x: 0.015337977, y: 0.012829429, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &4628368479054915091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3159823410007822364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030675953, y: 0.03263501, z: 0.025658855}
+  m_Center: {x: -0.00089298835, y: 0.016332367, z: -0.00067796273}
 --- !u!1 &3163986867087048374
 GameObject:
   m_ObjectHideFlags: 0
@@ -21629,7 +22012,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415484028687357672}
-  m_Layer: 0
+  - component: {fileID: 6301405960418861702}
+  m_Layer: 6
   m_Name: shelf02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21654,6 +22038,19 @@ Transform:
   m_Father: {fileID: 8192107642759568234}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6301405960418861702
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3185207400717390336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.083859235, y: 0.06, z: 0.045720212}
+  m_Center: {x: -0.00074635504, y: 0.03, z: -0.0028601075}
 --- !u!1 &3192224826042865763
 GameObject:
   m_ObjectHideFlags: 0
@@ -21729,7 +22126,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4243165925747957215}
   - component: {fileID: 1115114781105973344}
-  m_Layer: 0
+  - component: {fileID: 5973249314884055418}
+  m_Layer: 6
   m_Name: plant_Tomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21806,6 +22204,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.002891426, y: 0.00037992187, z: 0.024689209}
     m_Extent: {x: 0.012207533, y: 0.010598855, z: 0.028118376}
   m_DirtyAABB: 0
+--- !u!65 &5973249314884055418
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3206368083490784323}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024415066, y: 0.05623675, z: 0.021197718}
+  m_Center: {x: 0.0029255645, y: 0.027832331, z: -0.00014546994}
 --- !u!1 &3207657120868255490
 GameObject:
   m_ObjectHideFlags: 0
@@ -21879,7 +22290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7449785364944846344}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22188,7 +22599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1780312128789442018}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLBLegPlatform_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22341,9 +22752,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &3286787611707796158
 GameObject:
@@ -22419,7 +22830,8 @@ GameObject:
   - component: {fileID: 8382322329640721965}
   - component: {fileID: 7359658222479675728}
   - component: {fileID: 4613110264581121869}
-  m_Layer: 0
+  - component: {fileID: 8582704435693170566}
+  m_Layer: 6
   m_Name: trashBin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22492,6 +22904,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8582704435693170566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3309830860283819714}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.03, z: 0.04}
+  m_Center: {x: 0, y: 0.015, z: 0}
 --- !u!1 &3315740044732531521
 GameObject:
   m_ObjectHideFlags: 0
@@ -22564,7 +22989,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 112440330490078709}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRFLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22943,7 +23368,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6718652127467199091}
-  m_Layer: 0
+  - component: {fileID: 6543601731246058688}
+  m_Layer: 6
   m_Name: cashierDesk (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22968,6 +23394,19 @@ Transform:
   m_Father: {fileID: 141054474046090898}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6543601731246058688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3371847998987743717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16722415, y: 0.06, z: 0.04}
+  m_Center: {x: -0.0014165401, y: 0.03, z: -7.8633774e-17}
 --- !u!1 &3372137475560647142
 GameObject:
   m_ObjectHideFlags: 0
@@ -23750,7 +24189,7 @@ GameObject:
   - component: {fileID: 2252296211622865712}
   - component: {fileID: 4734605029761878268}
   - component: {fileID: 2577374064907489570}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelf01.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24426,7 +24865,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8881370423908401317}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: kitchenCounter03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24491,7 +24930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6567214195704490328}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigSpine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24597,16 +25036,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CodeName: 
-  IsLocked: 0
+  IsLocked: 1
   ModelProcess: {fileID: 5850260098208725828}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders:
-  - CodeName: veg_Tomato
-    ItemSlotsContainer:
-    - {fileID: 5721610417192370270}
-    - {fileID: 6923013799535129580}
-    - {fileID: 652389288723852976}
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!65 &1906820279
 BoxCollider:
@@ -25268,7 +25702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6465938443542448423}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail1Gizmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25551,7 +25985,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3394822004061729066}
-  m_Layer: 0
+  - component: {fileID: 8650109442118487712}
+  m_Layer: 6
   m_Name: shelf07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25575,6 +26010,19 @@ Transform:
   m_Father: {fileID: 6393948397570139747}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8650109442118487712
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801027166753248011}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.053732447, y: 0.11039146, z: 0.04}
+  m_Center: {x: -0.0013483071, y: 0.054687556, z: 0}
 --- !u!1 &3801751628936746762
 GameObject:
   m_ObjectHideFlags: 0
@@ -25774,7 +26222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7508683459652081281}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLFLegAnkle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26191,7 +26639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2731342568047268154}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail6Gizmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26898,7 +27346,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8650818179588579567}
   - component: {fileID: 925744708419181574}
-  m_Layer: 0
+  - component: {fileID: 1132999614130011271}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26975,6 +27424,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008930182, y: 0.0006779684, z: 0.01633237}
     m_Extent: {x: 0.015337977, y: 0.012829428, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &1132999614130011271
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3980263108420803918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030675953, y: 0.03263501, z: 0.025658866}
+  m_Center: {x: -0.0008929884, y: 0.016332366, z: -0.00067800016}
 --- !u!1 &3986272205764504032
 GameObject:
   m_ObjectHideFlags: 0
@@ -27046,7 +27508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2236921058331058139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27171,7 +27633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7408522801600376603}
-  - component: {fileID: 1219268419797486681}
+  - component: {fileID: 1565752482}
   m_Layer: 0
   m_Name: CashierDesk2
   m_TagString: Untagged
@@ -27206,10 +27668,11 @@ Transform:
   - {fileID: 860766129227846216}
   - {fileID: 4088751628371973080}
   - {fileID: 7504009089895563575}
+  - {fileID: 1023349034}
   m_Father: {fileID: 1684644604986136010}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1219268419797486681
+--- !u!114 &1565752482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27218,16 +27681,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 4014548159961082606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f68f285dfaffa2489b2fb181e42f9c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 59a299ea0bcf35046856eeeb9852e6df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CodeName: 
   IsLocked: 1
-  ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
-  ActionSlots: []
+  ModelProcess: {fileID: 4813384140490075018}
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
+  - CodeName: 
+    SlotsContainer: []
+  OutputItemSlots:
+  - CodeName: 
+    SlotsContainer: []
+  ActionSlots:
+  - CodeName: 
+    SlotsContainer: []
+  - CodeName: 
+    SlotsContainer: []
+  - CodeName: 
+    SlotsContainer: []
 --- !u!1 &4017380788854620610
 GameObject:
   m_ObjectHideFlags: 0
@@ -27385,7 +27858,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 402416809935750179}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRFLegAnkle_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27671,7 +28144,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8007096741750414527}
   - component: {fileID: 601859275696767958}
-  m_Layer: 0
+  - component: {fileID: 3796188239648743293}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27748,6 +28222,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008929884, y: 0.0006779991, z: 0.01633237}
     m_Extent: {x: 0.015337982, y: 0.012829433, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &3796188239648743293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4105797833452043957}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030675989, y: 0.032635015, z: 0.025658874}
+  m_Center: {x: -0.00089298864, y: 0.016332366, z: -0.00067800126}
 --- !u!1 &4110820691580539153
 GameObject:
   m_ObjectHideFlags: 0
@@ -28014,8 +28501,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8654183240135019947}
+  - component: {fileID: 4098974389191696352}
+  - component: {fileID: 8296680427896339993}
   m_Layer: 0
-  m_Name: TrashBin (2)
+  m_Name: TrashBin 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28039,6 +28528,44 @@ Transform:
   m_Father: {fileID: 4451721839022106619}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4098974389191696352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4139417145502395096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f68f285dfaffa2489b2fb181e42f9c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CodeName: 
+  IsLocked: 1
+  ModelProcess: {fileID: 0}
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
+  - CodeName: anything
+    SlotsContainer:
+    - {fileID: 5953888444611463019}
+  OutputItemSlots: []
+  ActionSlots:
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 5032717391007142692}
+--- !u!65 &8296680427896339993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4139417145502395096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.03, z: 0.05}
+  m_Center: {x: 0, y: 0.015, z: 0}
 --- !u!1 &4148935040922781237
 GameObject:
   m_ObjectHideFlags: 0
@@ -28259,9 +28786,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &4172606142042483221
 GameObject:
@@ -28436,9 +28963,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &4205756762879824152
 GameObject:
@@ -28449,7 +28976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2950603650079596377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail3Gizmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28685,7 +29212,7 @@ GameObject:
   - component: {fileID: 7907128986075518667}
   - component: {fileID: 8919880710516090895}
   - component: {fileID: 8146970262673527835}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelf03.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29205,7 +29732,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6341210975629336254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLFLegPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29419,7 +29946,7 @@ GameObject:
   - component: {fileID: 2084467683634162279}
   - component: {fileID: 4084497339513031878}
   - component: {fileID: 1023681654545827221}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29534,7 +30061,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 430580644612159989}
-  m_Layer: 0
+  - component: {fileID: 4717107206740908869}
+  m_Layer: 6
   m_Name: fridge01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29560,6 +30088,19 @@ Transform:
   m_Father: {fileID: 6568376295842167245}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4717107206740908869
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4356265591927718701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.083859235, y: 0.1044469, z: 0.04}
+  m_Center: {x: -0.00074635504, y: 0.05222345, z: 0}
 --- !u!1 &4357423059210693393
 GameObject:
   m_ObjectHideFlags: 0
@@ -30404,7 +30945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6207514416338616172}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigHead_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30468,7 +31009,8 @@ GameObject:
   - component: {fileID: 5156779488567281840}
   - component: {fileID: 356482942763453295}
   - component: {fileID: 6240162483080020041}
-  m_Layer: 0
+  - component: {fileID: 1832187743250448540}
+  m_Layer: 6
   m_Name: trashBin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30541,6 +31083,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1832187743250448540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513617475913817870}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.03, z: 0.04}
+  m_Center: {x: 0, y: 0.015, z: 0}
 --- !u!1 &4515790548522618869
 GameObject:
   m_ObjectHideFlags: 0
@@ -30686,9 +31241,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!65 &463349233
 BoxCollider:
@@ -30870,7 +31425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4739689495878492455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail6_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31421,7 +31976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8230019362383344971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31693,9 +32248,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &4739622281509214611
 GameObject:
@@ -31800,7 +32355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5174860695002055040}
   m_Layer: 0
-  m_Name: WorkerSlot
+  m_Name: OutWorkerSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32295,7 +32850,7 @@ GameObject:
   - component: {fileID: 3597528539010752992}
   - component: {fileID: 2569857815229590289}
   - component: {fileID: 6026224607454170793}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33852,7 +34407,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9123983153826898793}
   - component: {fileID: 6168414346921578577}
-  m_Layer: 0
+  - component: {fileID: 3852509098017395605}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33929,6 +34485,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008929288, y: 0.0006779684, z: 0.01633237}
     m_Extent: {x: 0.0153379785, y: 0.01282943, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &3852509098017395605
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4957922875454181498}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030675966, y: 0.032635015, z: 0.025658868}
+  m_Center: {x: -0.00089289906, y: 0.016332367, z: -0.0006779704}
 --- !u!1 &4960167646869984968
 GameObject:
   m_ObjectHideFlags: 0
@@ -33938,7 +34507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6932347631395500432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34066,7 +34635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7854879359225832185}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34777,15 +35346,18 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 77530902827945894}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots:
   - CodeName: veg_Tomato
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 1824560238008686284}
     - {fileID: 6598678538506357817}
     - {fileID: 1582907807408008421}
-  ActionSlots: []
+  ActionSlots:
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 5358920633061055092}
 --- !u!65 &1832571142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35126,7 +35698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8080338854868629483}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigNeck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35252,7 +35824,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7548287485798510617}
   - component: {fileID: 8402990609311426910}
-  m_Layer: 0
+  - component: {fileID: 4835382275551630588}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35329,6 +35902,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008930401, y: 0.00067790877, z: 0.01633237}
     m_Extent: {x: 0.015337978, y: 0.0128294295, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &4835382275551630588
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5162261401114592685}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030675966, y: 0.03263502, z: 0.02565888}
+  m_Center: {x: -0.0008930177, y: 0.01633237, z: -0.00067785115}
 --- !u!1 &5165159954171414363
 GameObject:
   m_ObjectHideFlags: 0
@@ -35732,7 +36318,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3660796816184354536}
   - component: {fileID: 4858528234058461410}
-  m_Layer: 0
+  - component: {fileID: 3111399396969170410}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35809,6 +36396,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008930396, y: 0.0006779684, z: 0.01633237}
     m_Extent: {x: 0.015337976, y: 0.012829429, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &3111399396969170410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5219570387321705848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030675955, y: 0.032635015, z: 0.02565887}
+  m_Center: {x: -0.00089306955, y: 0.016332366, z: -0.00067791075}
 --- !u!1 &5223204072024976805
 GameObject:
   m_ObjectHideFlags: 0
@@ -35863,15 +36463,18 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 2342076531328526710}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots:
   - CodeName: veg_Tomato
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 3139520363017357377}
     - {fileID: 385222434531734932}
     - {fileID: 5892798475570797854}
-  ActionSlots: []
+  ActionSlots:
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 3302906823816163956}
 --- !u!65 &613017685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36051,7 +36654,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2511587080661073990}
   - component: {fileID: 5080300446423462773}
-  m_Layer: 0
+  - component: {fileID: 3321328633628137426}
+  m_Layer: 6
   m_Name: plant_Tomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36128,6 +36732,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.002891412, y: 0.00037990697, z: 0.024689209}
     m_Extent: {x: 0.012207536, y: 0.010598857, z: 0.028118376}
   m_DirtyAABB: 0
+--- !u!65 &3321328633628137426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5267965216050007920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024415081, y: 0.056236755, z: 0.021197734}
+  m_Center: {x: 0.0029255361, y: 0.027832331, z: -0.00014546994}
 --- !u!1 &5284510467253408971
 GameObject:
   m_ObjectHideFlags: 0
@@ -36171,7 +36788,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6790661434854515745}
-  m_Layer: 0
+  - component: {fileID: 4560913101387303005}
+  m_Layer: 6
   m_Name: kitchenCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36195,6 +36813,19 @@ Transform:
   m_Father: {fileID: 1034264850432695485}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4560913101387303005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5288077148768351143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11452898, y: 0.07086568, z: 0.041670736}
+  m_Center: {x: 0.0007486629, y: 0.03543284, z: 0.00032645464}
 --- !u!1 &5290190854539257192
 GameObject:
   m_ObjectHideFlags: 0
@@ -36402,9 +37033,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &5319403631448494034
 GameObject:
@@ -37972,7 +38603,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 144584145603101330}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRFLegPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38236,9 +38867,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!65 &1181276354
 BoxCollider:
@@ -39366,7 +39997,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7800635125246035712}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLBLegPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40382,7 +41013,7 @@ GameObject:
   - component: {fileID: 2138463178263933750}
   - component: {fileID: 8438710826173254776}
   - component: {fileID: 4463818851230077659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashierDesk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40656,7 +41287,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5739064950330488053}
   - component: {fileID: 2911370423776224617}
-  m_Layer: 0
+  - component: {fileID: 2035476214488992764}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40733,6 +41365,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008928096, y: 0.0006780131, z: 0.01633237}
     m_Extent: {x: 0.015337977, y: 0.012829429, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &2035476214488992764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5930754235790762619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030675951, y: 0.03263501, z: 0.025658866}
+  m_Center: {x: -0.00089275, y: 0.016332366, z: -0.000678015}
 --- !u!1 &5938772790112152321
 GameObject:
   m_ObjectHideFlags: 0
@@ -40934,10 +41579,10 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 2619656879692014129}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: veg_Wheat
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 6735342920941638569}
     - {fileID: 8167926705238338865}
     - {fileID: 8225605102571897587}
@@ -40946,9 +41591,9 @@ MonoBehaviour:
     - {fileID: 6131310977076703702}
     - {fileID: 8946148420823723490}
     - {fileID: 392849283574749599}
-  OutputItemSlotPlaceHolders:
+  OutputItemSlots:
   - CodeName: milk
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 6022893368319093950}
     - {fileID: 6725200669151738668}
     - {fileID: 948276720210028623}
@@ -40957,7 +41602,13 @@ MonoBehaviour:
     - {fileID: 9219398453154628011}
     - {fileID: 6832343444770770796}
     - {fileID: 134434300298776376}
-  ActionSlots: []
+  ActionSlots:
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 5677231414474813098}
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 6018084426054532108}
 --- !u!135 &2846866153914494494
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43122,7 +43773,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4163479674376715945}
-  m_Layer: 0
+  - component: {fileID: 876086328}
+  m_Layer: 6
   m_Name: shelf04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43146,6 +43798,19 @@ Transform:
   m_Father: {fileID: 6818079541166864515}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &876086328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6249159529191012926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.079643354, y: 0.08, z: 0.03669423}
+  m_Center: {x: -0.0013128233, y: 0.04, z: 0.0038782745}
 --- !u!1 &6262562010723938904
 GameObject:
   m_ObjectHideFlags: 0
@@ -43342,7 +44007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 496814428181459644}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRibcageGizmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43406,7 +44071,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6369110310492930914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRBLegPlatform_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43929,9 +44594,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &6375290123126527206
 GameObject:
@@ -44379,7 +45044,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6985007853820406684}
   - component: {fileID: 5136432216948357887}
-  m_Layer: 0
+  - component: {fileID: 2580922902512339345}
+  m_Layer: 6
   m_Name: plant_Tomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44456,6 +45122,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0028913738, y: 0.00037992187, z: 0.024689209}
     m_Extent: {x: 0.012207534, y: 0.010598857, z: 0.028118376}
   m_DirtyAABB: 0
+--- !u!65 &2580922902512339345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6424907280347447463}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024415074, y: 0.056236766, z: 0.021197736}
+  m_Center: {x: 0.0029254828, y: 0.027832333, z: -0.00014546991}
 --- !u!1 &6433058407787706216
 GameObject:
   m_ObjectHideFlags: 0
@@ -44945,7 +45624,8 @@ GameObject:
   - component: {fileID: 9050920967203254088}
   - component: {fileID: 8993258807826131347}
   - component: {fileID: 1628312228426375714}
-  m_Layer: 0
+  - component: {fileID: 192539627721208044}
+  m_Layer: 6
   m_Name: crate_Milk_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45017,6 +45697,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &192539627721208044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6546745878543090385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05000001, y: 0.01001955, z: 0.05000001}
+  m_Center: {x: 0.000000059604645, y: 0.006011729, z: 0.000000014901161}
 --- !u!1 &6547355749362853289
 GameObject:
   m_ObjectHideFlags: 0
@@ -45726,7 +46419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4271665457591523923}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46541,7 +47234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1633057037111741787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRFLegAnkle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46687,7 +47380,7 @@ GameObject:
   - component: {fileID: 992395446516314397}
   - component: {fileID: 3223786170857742471}
   - component: {fileID: 2954851011869130278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelf07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46872,7 +47565,7 @@ GameObject:
   - component: {fileID: 3260425176014514433}
   - component: {fileID: 7365195958854867640}
   - component: {fileID: 8797058744907587244}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: door_Fridge_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46954,7 +47647,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7496949568449433506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rig_Cow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47402,7 +48095,7 @@ GameObject:
   - component: {fileID: 572490796678766465}
   - component: {fileID: 132795601585286439}
   - component: {fileID: 77556168326963003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelf03.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48099,9 +48792,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &6967271952981600972
 GameObject:
@@ -48654,7 +49347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5492339355127575114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLBLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48719,7 +49412,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6635396077806422562}
   - component: {fileID: 1422732985293552785}
-  m_Layer: 0
+  - component: {fileID: 4742260891907740189}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48796,6 +49490,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008930182, y: 0.0006779684, z: 0.01633237}
     m_Extent: {x: 0.015337977, y: 0.012829428, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &4742260891907740189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7095228688520098274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030675953, y: 0.03263501, z: 0.025658866}
+  m_Center: {x: -0.0008930182, y: 0.016332366, z: -0.00067800016}
 --- !u!1 &7105177414305631883
 GameObject:
   m_ObjectHideFlags: 0
@@ -49222,9 +49929,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &7192687560440182478
 GameObject:
@@ -51636,7 +52343,7 @@ GameObject:
   - component: {fileID: 9163009059587890567}
   - component: {fileID: 1649231515109426423}
   - component: {fileID: 9187682436317728185}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: door_Fridge_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51878,7 +52585,7 @@ GameObject:
   - component: {fileID: 5284462500992715025}
   - component: {fileID: 886302584224612815}
   - component: {fileID: 8180890743527506600}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelf02.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52286,10 +52993,10 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 4402921753247100008}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: veg_Tomato
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 2169058647179888304}
     - {fileID: 586121149660404690}
     - {fileID: 5665846368056630135}
@@ -52298,9 +53005,9 @@ MonoBehaviour:
     - {fileID: 5083343982893843324}
     - {fileID: 326339971409274205}
     - {fileID: 2280758335647433495}
-  OutputItemSlotPlaceHolders:
+  OutputItemSlots:
   - CodeName: egg
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 4346220131492011536}
     - {fileID: 1652621240796736898}
     - {fileID: 803735384478380907}
@@ -52311,10 +53018,10 @@ MonoBehaviour:
     - {fileID: 7487759129157622800}
   ActionSlots:
   - CodeName: Input
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 7979975498030129607}
   - CodeName: Output
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 2242960198778247684}
 --- !u!65 &8655794362123469159
 BoxCollider:
@@ -53090,7 +53797,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5653433195979163068}
-  m_Layer: 0
+  - component: {fileID: 2948219755068743291}
+  m_Layer: 6
   m_Name: shelf01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53115,6 +53823,19 @@ Transform:
   m_Father: {fileID: 7623416889653563515}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2948219755068743291
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7654267375699807669}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.083859235, y: 0.08, z: 0.047497768}
+  m_Center: {x: -0.00074635504, y: 0.04, z: -0.0037488888}
 --- !u!1 &7655457715037292191
 GameObject:
   m_ObjectHideFlags: 0
@@ -53373,7 +54094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2616422700491715948}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigHeadGizmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53659,6 +54380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8192107642759568234}
   - component: {fileID: 1219268419904281596}
+  - component: {fileID: 2042818705}
   m_Layer: 0
   m_Name: Shelf02_Tomato
   m_TagString: Untagged
@@ -53705,10 +54427,10 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: veg_Tomato
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 3064865647412319457}
     - {fileID: 8610381483641350270}
     - {fileID: 9222026906285549650}
@@ -53724,17 +54446,30 @@ MonoBehaviour:
     - {fileID: 6740006991007451580}
     - {fileID: 7347290585231556240}
     - {fileID: 2358088010102157341}
-  OutputItemSlotPlaceHolders: []
+  OutputItemSlots: []
   ActionSlots:
   - CodeName: Input
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 4602737199014677673}
   - CodeName: Output
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 453536372288604984}
     - {fileID: 5189405366493225175}
     - {fileID: 8245358211298205794}
     - {fileID: 1469846992351905268}
+--- !u!65 &2042818705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7750752916660738849}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13032496, y: 0.08, z: 0.10365176}
+  m_Center: {x: 0.00082709786, y: 0.04, z: -0.024534134}
 --- !u!1 &7752995444230850386
 GameObject:
   m_ObjectHideFlags: 0
@@ -53822,17 +54557,17 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 6693540430236549897}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots:
   - CodeName: veg_Tomato
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 2533468841805497777}
     - {fileID: 8806409376024598423}
     - {fileID: 2288244872221642939}
   ActionSlots:
   - CodeName: Output
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 3415703583908672555}
 --- !u!65 &1352232970
 BoxCollider:
@@ -54197,7 +54932,7 @@ GameObject:
   - component: {fileID: 1690650871678966073}
   - component: {fileID: 843944965174894338}
   - component: {fileID: 457865836913240269}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelf01.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54686,7 +55421,7 @@ GameObject:
   - component: {fileID: 8049355765090326276}
   - component: {fileID: 8810150557635168819}
   - component: {fileID: 3124811603054618854}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: kitchenCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54768,7 +55503,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6979288038541662361}
   - component: {fileID: 1137522737403230142}
-  m_Layer: 0
+  - component: {fileID: 5394348987425578752}
+  m_Layer: 6
   m_Name: plant_Tomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54845,6 +55581,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0028913813, y: 0.00037989486, z: 0.024689209}
     m_Extent: {x: 0.012207533, y: 0.010598854, z: 0.028118376}
   m_DirtyAABB: 0
+--- !u!65 &5394348987425578752
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947194934157698779}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024415074, y: 0.056236766, z: 0.021197723}
+  m_Center: {x: 0.0029255352, y: 0.027832333, z: -0.00014545597}
 --- !u!1 &7948171486387139011
 GameObject:
   m_ObjectHideFlags: 0
@@ -54854,7 +55603,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8875846512459660209}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLBLegAnkle_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55365,6 +56114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4726593458762771950}
   - component: {fileID: 1219268419286100971}
+  - component: {fileID: 405638110}
   m_Layer: 0
   m_Name: Machine_Blender
   m_TagString: Untagged
@@ -55411,12 +56161,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CodeName: 
-  IsLocked: 1
-  ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
-  ActionSlots: []
+  IsLocked: 0
+  ModelProcess: {fileID: 8539665926210527176}
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
+  - CodeName: veg_Tomato
+    SlotsContainer:
+    - {fileID: 7108399683856458979}
+    - {fileID: 8386788546973446714}
+    - {fileID: 5779908492956624271}
+    - {fileID: 4388227802433362355}
+    - {fileID: 1930226116250403684}
+    - {fileID: 2121789534411335830}
+    - {fileID: 7652360157328395273}
+    - {fileID: 1525159978592977732}
+  OutputItemSlots:
+  - CodeName: tomatoSauce
+    SlotsContainer:
+    - {fileID: 4733879925678272126}
+    - {fileID: 7959701130630777133}
+    - {fileID: 2963456204161132279}
+    - {fileID: 289482123800804951}
+    - {fileID: 8633342339223810932}
+    - {fileID: 7380433069776825848}
+    - {fileID: 2520837626580998724}
+    - {fileID: 6219769351973964338}
+  ActionSlots:
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 4793828453463897026}
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 8344425987509340999}
+--- !u!65 &405638110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8066734758875614836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13032496, y: 0.08, z: 0.10365176}
+  m_Center: {x: 0.00082709786, y: 0.02, z: -0.024534134}
 --- !u!1 &8072075794659398166
 GameObject:
   m_ObjectHideFlags: 0
@@ -55905,9 +56694,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &8155285278905821722
 GameObject:
@@ -56580,6 +57369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7623416889653563515}
   - component: {fileID: 1219268419649071063}
+  - component: {fileID: 909177521}
   m_Layer: 0
   m_Name: Shelf01_TomatoSauce
   m_TagString: Untagged
@@ -56622,12 +57412,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CodeName: 
-  IsLocked: 1
+  IsLocked: 0
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
-  ActionSlots: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
+  - CodeName: tomatoSauce
+    SlotsContainer:
+    - {fileID: 4851182392917065097}
+    - {fileID: 161040981445706370}
+    - {fileID: 1139895254335336192}
+    - {fileID: 3056013056888464318}
+    - {fileID: 5927690730573582532}
+    - {fileID: 1825904246445478743}
+    - {fileID: 5876566068949345976}
+    - {fileID: 4986910292308947224}
+    - {fileID: 6307040260708597010}
+    - {fileID: 123061984474043251}
+    - {fileID: 4214882684519521367}
+    - {fileID: 5012848620140972147}
+  OutputItemSlots: []
+  ActionSlots:
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 8253579722949009190}
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 2139448335719930439}
+    - {fileID: 8169129956918328014}
+    - {fileID: 3435709241294967600}
+--- !u!65 &909177521
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8289940808217481525}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12726003, y: 0.08, z: 0.09818899}
+  m_Center: {x: 0.0012476062, y: 0.04, z: -0.025503136}
 --- !u!1 &8295120158981542474
 GameObject:
   m_ObjectHideFlags: 0
@@ -56787,7 +57612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5908689678127688438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigRBLegAnkle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56853,7 +57678,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3927442322282045240}
-  m_Layer: 0
+  - component: {fileID: 5272019056219466942}
+  m_Layer: 6
   m_Name: shelfEgg_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56879,6 +57705,19 @@ Transform:
   m_Father: {fileID: 3183605089024701656}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5272019056219466942
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8323516525215187152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.051235117, y: 0.06, z: 0.049371336}
+  m_Center: {x: 0.0011695814, y: 0.03, z: 0.00058187486}
 --- !u!1 &8326178800522648286
 GameObject:
   m_ObjectHideFlags: 0
@@ -56983,7 +57822,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2567807319573650442}
   - component: {fileID: 8612130354830405538}
-  m_Layer: 0
+  - component: {fileID: 2427291697337950307}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57060,6 +57900,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00089298794, y: 0.0006779684, z: 0.01633237}
     m_Extent: {x: 0.015337976, y: 0.0128294295, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &2427291697337950307
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8337555377454725920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030675951, y: 0.032635015, z: 0.02565887}
+  m_Center: {x: -0.0008929879, y: 0.016332367, z: -0.0006779701}
 --- !u!1 &8342206844796560477
 GameObject:
   m_ObjectHideFlags: 0
@@ -57328,7 +58181,8 @@ GameObject:
   - component: {fileID: 337029948326858260}
   - component: {fileID: 4503275514387672654}
   - component: {fileID: 4862200687184527058}
-  m_Layer: 0
+  - component: {fileID: 2026850735282180282}
+  m_Layer: 6
   m_Name: trashBin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57401,6 +58255,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2026850735282180282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8366587683026927221}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.03, z: 0.04}
+  m_Center: {x: 0, y: 0.015, z: 0}
 --- !u!1 &8370649568771717278
 GameObject:
   m_ObjectHideFlags: 0
@@ -57849,10 +58716,10 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: flourBag
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 3597240103770316899}
     - {fileID: 510930964532717891}
     - {fileID: 1714102771755710662}
@@ -57865,8 +58732,17 @@ MonoBehaviour:
     - {fileID: 8385792378942571182}
     - {fileID: 2165281825851801085}
     - {fileID: 2402236896208908115}
-  OutputItemSlotPlaceHolders: []
-  ActionSlots: []
+  OutputItemSlots: []
+  ActionSlots:
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 8123738472986260857}
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 1880228625540043289}
+    - {fileID: 4789095334196549126}
+    - {fileID: 3241431211157803225}
+    - {fileID: 1198448535591311267}
 --- !u!65 &977501230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58005,7 +58881,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5241863205908737284}
   - component: {fileID: 3337366973899886454}
-  m_Layer: 0
+  - component: {fileID: 2690930154671011211}
+  m_Layer: 6
   m_Name: plant_Wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58082,6 +58959,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0008929586, y: 0.0006779386, z: 0.01633237}
     m_Extent: {x: 0.015337977, y: 0.01282943, z: 0.016317505}
   m_DirtyAABB: 0
+--- !u!65 &2690930154671011211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446067345146585237}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030675951, y: 0.03263502, z: 0.025658872}
+  m_Center: {x: -0.0008928692, y: 0.016332367, z: -0.00067791075}
 --- !u!1 &8449564487582577088
 GameObject:
   m_ObjectHideFlags: 0
@@ -58763,10 +59653,10 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 5288077148768351143}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: veg_Wheat
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 3067760790538150180}
     - {fileID: 6480148262773269679}
     - {fileID: 3487545979522525677}
@@ -58775,9 +59665,9 @@ MonoBehaviour:
     - {fileID: 5084152612187187037}
     - {fileID: 7221393343019568730}
     - {fileID: 2394941796288837819}
-  OutputItemSlotPlaceHolders:
+  OutputItemSlots:
   - CodeName: flourBag
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 2629685422135031154}
     - {fileID: 629507161707180501}
     - {fileID: 983908722463042644}
@@ -58786,7 +59676,13 @@ MonoBehaviour:
     - {fileID: 6961176384479562433}
     - {fileID: 6746724449276185264}
     - {fileID: 2395993530133745287}
-  ActionSlots: []
+  ActionSlots:
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 840066347615149270}
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 6568102693958233422}
 --- !u!65 &5301600863579356401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59884,7 +60780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5847058679865213334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLBLeg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60020,9 +60916,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &8738699166683513379
 GameObject:
@@ -60661,6 +61557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 292634658806816834}
   - component: {fileID: 1219268418962786407}
+  - component: {fileID: 2855765826517551032}
   m_Layer: 0
   m_Name: TrashBin
   m_TagString: Untagged
@@ -60699,12 +61596,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CodeName: 
-  IsLocked: 1
+  IsLocked: 0
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
-  ActionSlots: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
+  - CodeName: anything
+    SlotsContainer:
+    - {fileID: 9220829299699698063}
+  OutputItemSlots: []
+  ActionSlots:
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 7283086076401268368}
+--- !u!65 &2855765826517551032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8858606751479125375}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.03, z: 0.05}
+  m_Center: {x: 0, y: 0.015, z: 0}
 --- !u!1 &8860271285861189993
 GameObject:
   m_ObjectHideFlags: 0
@@ -60968,7 +61884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3778087648891648319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail5Gizmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61344,7 +62260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4779429236404163415}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigTail4Gizmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61523,20 +62439,10 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 1159775171997793055}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
-  - CodeName: veg_Wheat
-    ItemSlotsContainer:
-    - {fileID: 531007055467630089}
-    - {fileID: 5248483959190303722}
-    - {fileID: 6528511536704498642}
-    - {fileID: 7939160464869585264}
-    - {fileID: 1927785905322371684}
-    - {fileID: 6705070252287922566}
-    - {fileID: 8697568177069064208}
-    - {fileID: 3528450610285844229}
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: egg
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 5796581808538814128}
     - {fileID: 9193440887714210605}
     - {fileID: 7423269665634788771}
@@ -61545,9 +62451,19 @@ MonoBehaviour:
     - {fileID: 4754692973987061442}
     - {fileID: 319819950914413352}
     - {fileID: 8831404107491922}
-  OutputItemSlotPlaceHolders:
-  - CodeName: cookie
-    ItemSlotsContainer:
+  - CodeName: veg_Wheat
+    SlotsContainer:
+    - {fileID: 531007055467630089}
+    - {fileID: 5248483959190303722}
+    - {fileID: 6528511536704498642}
+    - {fileID: 7939160464869585264}
+    - {fileID: 1927785905322371684}
+    - {fileID: 6705070252287922566}
+    - {fileID: 8697568177069064208}
+    - {fileID: 3528450610285844229}
+  OutputItemSlots:
+  - CodeName: bread
+    SlotsContainer:
     - {fileID: 8148674197313479903}
     - {fileID: 5915314240306326744}
     - {fileID: 8496889987103851006}
@@ -61556,7 +62472,13 @@ MonoBehaviour:
     - {fileID: 2358936129740851100}
     - {fileID: 1950203511569088473}
     - {fileID: 5912501177625305931}
-  ActionSlots: []
+  ActionSlots:
+  - CodeName: Input
+    SlotsContainer:
+    - {fileID: 50810515550134033}
+  - CodeName: Output
+    SlotsContainer:
+    - {fileID: 7857330248370822524}
 --- !u!65 &1033524305
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61657,9 +62579,9 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 1
   ModelProcess: {fileID: 0}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders: []
-  OutputItemSlotPlaceHolders: []
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots: []
+  OutputItemSlots: []
   ActionSlots: []
 --- !u!1 &9040156520386308277
 GameObject:
@@ -61864,19 +62786,19 @@ MonoBehaviour:
   CodeName: 
   IsLocked: 0
   ModelProcess: {fileID: 4349221844619334000}
-  InputWorkerSlot: {fileID: 0}
-  InputItemSlotPlaceHolders:
+  DummySpawnPos: {fileID: 0}
+  InputItemSlots:
   - CodeName: anything
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 1561090566}
     - {fileID: 482360255}
     - {fileID: 1783844951}
     - {fileID: 490542132}
     - {fileID: 1576243149}
     - {fileID: 850959282}
-  OutputItemSlotPlaceHolders:
+  OutputItemSlots:
   - CodeName: cash
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 2461686737377536961}
     - {fileID: 6693776374778399902}
     - {fileID: 7202644267977267754}
@@ -61889,10 +62811,10 @@ MonoBehaviour:
     - {fileID: 661154098645207296}
   ActionSlots:
   - CodeName: Process
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 8264236768809525580}
   - CodeName: Input
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 3161029930647502288}
     - {fileID: 2138572371334740395}
     - {fileID: 4996232141094358717}
@@ -61900,7 +62822,7 @@ MonoBehaviour:
     - {fileID: 8340352367274189521}
     - {fileID: 6507494587418071318}
   - CodeName: Thief
-    ItemSlotsContainer:
+    SlotsContainer:
     - {fileID: 5316713661798383312}
 --- !u!1 &9061438670123760974
 GameObject:
@@ -62041,7 +62963,8 @@ GameObject:
   - component: {fileID: 7813659286724441317}
   - component: {fileID: 344221758988298581}
   - component: {fileID: 3321021121284808760}
-  m_Layer: 0
+  - component: {fileID: 5091196680937012066}
+  m_Layer: 6
   m_Name: kitchenCounter.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62113,6 +63036,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5091196680937012066
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9101598667524939261}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14000002, y: 0.01998045, z: 0.08498534}
+  m_Center: {x: 0.007999992, y: 0.00998435, z: 0.022506345}
 --- !u!1 &9106373042051444729
 GameObject:
   m_ObjectHideFlags: 0
@@ -62124,7 +63060,7 @@ GameObject:
   - component: {fileID: 5006338137895354072}
   - component: {fileID: 5599645603138086475}
   - component: {fileID: 8705702652319294129}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelf06.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62237,7 +63173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 712795700658345401}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RigLFLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

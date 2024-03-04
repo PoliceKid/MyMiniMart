@@ -130,7 +130,7 @@
         }
     },
     "Machine_WheatMill": {
-        "Type":1,
+        "Type":2,
         "Duration": 5,
         "ItemPool": {
             "Input": [
@@ -293,6 +293,23 @@
             ]
         }
     },
+    "Shelf01_TomatoSauce": {
+        "Type":1,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [     
+                {
+                    "CodeName": "veg_Tomato",
+                    "MaxSlot": 3,
+                    "AmoutProcess":3
+                }         
+            ],
+            "Output": [
+                
+            ]
+        }
+    },
+    
     "Shelf06_Bread": {
         "Type":1,
         "Duration": 5,
@@ -324,6 +341,34 @@
                     "CodeName": "tomatoSauce",
                     "MaxSlot": 3
                 }
+            ]
+        }
+    },
+    "TrashBin": {
+        "Type":0,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [
+                {
+                    "CodeName": "anything"                 
+                }           
+            ],
+            "Output": [
+               
+            ]
+        }
+    },
+    "TrashBin 2": {
+        "Type":0,
+        "Duration": 5,
+        "ItemPool": {
+            "Input": [
+                {
+                    "CodeName": "anything"                 
+                }           
+            ],
+            "Output": [
+               
             ]
         }
     }

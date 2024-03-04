@@ -63,11 +63,6 @@ public class UnitDataModel
     public void SetActiveRoutineCommandData(CommandData commandData)
     {
         if (commandData == null) return;
-        CommandBuilding listSupportCommand = GetListSupportCommandbuilding(commandData.CodeName);
-        if(listSupportCommand!= null)
-        {
-            listSupportCommand.CommpleteAllSupportCommand(false);
-        }
         MainRoutineCommandData.SetActiveCommanData(commandData);
     }
     public void SetMainActiveCommand(CommandData commandData)
@@ -81,15 +76,10 @@ public class UnitDataModel
     public void SetSupportedActiveCommanData(CommandData commandData)
     {
         if (commandData == null) return; 
-        CommandData activeSupportCommand = ActiveSupportCommand();
-        if(activeSupportCommand != null)
-        {
-            activeSupportCommand.CompleteCommand(true);
-        }
         GetListSupportCommandbuilding(MainRoutineCommandData.ActiveCommandData.CodeName).SetActiveCommanData(commandData);
     }
     public CommandData ActiveSupportCommand() => GetListSupportCommandbuilding(MainRoutineCommandData.ActiveCommandData.CodeName).ActiveCommandData;
-    public bool IsCompleteRoutine => MainRoutineCommandData.IsCommpleteAllSupportCommand; // meaning complete without loop infinite
+    public bool IsCompleteRoutine => MainRoutineCommandData.IsCommpleteAllCommand; // meaning complete without loop infinite
     public ActionType GetActiveActionType()
     {
         return GameHelper.ConvertStringToEnum(MainActiveCommand.ActionType);
@@ -115,50 +105,6 @@ public class UnitDataModel
             AddCommandBuilding(commandData, item);
         }
     }
-    //public CommandData GetNextRoutineCommand()
-    //{
-    //    List<CommandData> listRoutineCommand = MainRoutineCommandData.Commands;
-    //    if (listRoutineCommand.Count == 0) return null;
-    //    listRoutineCommand = listRoutineCommand.Where(x => GetTargetBuilding(x) != null).ToList();
-    //    listRoutineCommand = listRoutineCommand
-    //        .OrderByDescending(y => {
-    //            var targetBuilding = GetTargetBuilding(GetNextSupportCommand(y.CodeName));
-    //            return targetBuilding != null ?
-    //                targetBuilding.BuildingData.GetTotalCountItem(ItemSlotType.Output) :0; // 
-    //        })
-    //        .OrderBy(x => {
-    //            var targetBuilding = GetTargetBuilding(x);
-    //            return targetBuilding != null ?
-    //                targetBuilding.BuildingData.GetTotalCountItem(ItemSlotType.Input) :0; // Hoặc giá trị mặc định khác tùy thuộc vào logic của bạn
-    //        }).ToList();
-    //    return listRoutineCommand.Count>0 ? listRoutineCommand.First(): null;
-    //}
-    //public CommandData GetNextRoutineCommand(int index)
-    //{
-    //    List<CommandData> listRoutineCommand = MainRoutineCommandData.Commands;
-    //    if (listRoutineCommand.Count == 0) return null;
-    //    index = Math.Clamp(index, 0, listRoutineCommand.Count-1);
-    //    return listRoutineCommand[index];
-    //}
-    //public CommandData GetNextSupportCommand(string commandCodeName)
-    //{
-    //    if (!CommandBuildings.ContainsKey(commandCodeName)) return null;
-    //    List<CommandData> listCommandSupport = GetListSupportCommandbuilding(commandCodeName).Commands;
-    //    if (listCommandSupport != null)
-    //    {   
-    //        // Lọc ra list command khác null
-    //        listCommandSupport = listCommandSupport.Where(x =>GetTargetBuilding(x) != null).ToList();
-    //        // sort support building với output item count nhiều nhất để đi lấy
-    //        listCommandSupport = listCommandSupport.OrderByDescending(x => {
-    //            var targetBuilding = GetTargetBuilding(x);
-    //            return targetBuilding != null ?
-    //                targetBuilding.BuildingData.GetTotalCountItem(ItemSlotType.Output) :0; // Hoặc giá trị mặc định khác tùy thuộc vào logic của bạn
-    //        }).
-    //            ThenBy(y => GetTargetBuilding(y).BuildingData.GetUnitJoinQueue(ActionType.Output)).ToList();
-    //        return listCommandSupport.Count>0 ? listCommandSupport.First(): null;
-    //    }
-    //    return null;
-    //}
     public CommandBuilding GetListSupportCommandbuilding(string commandCodeName)
     {
         if (CommandBuildings.TryGetValue(commandCodeName, out CommandBuilding listCommandSupport))
@@ -167,58 +113,34 @@ public class UnitDataModel
         }
         return null;
     }
-    // NEXT FUNCTION
-    //public CommandData NextRoutineCommand(int index =-1)
-    //{
-    //    if (ActiveRoutineCommandData != null)
-    //        ActiveRoutineCommandData.CompleteCommand(true);
-    //    // get next Routine command
-    //    CommandData nextRoutineCommand = null;
-    //    if (index != -1)
-    //    {
-    //        nextRoutineCommand = GetNextRoutineCommand(index);
-    //    }
-    //    else
-    //    {
-    //        nextRoutineCommand = GetNextRoutineCommand();
-    //    }
-    //    if (nextRoutineCommand == null) return null;
-    //    // Set active routine command  = next routine command
-    //    SetActiveRoutineCommandData(nextRoutineCommand);
-
-    //    // return active command. 
-    //    return nextRoutineCommand;
-    //}
-    //public CommandData NextSupportCommand( CommandData routineActiveCommand)
-    //{
-    //    // If Unit max slot item carry hoặc 
-    //    if(routineActiveCommand == null) return null;
-    //    if (ActiveRoutineCommandData != null)
-    //        ActiveRoutineCommandData.CompleteCommand(false);
-        
-    //    CommandData supportCommandPriority = GetNextSupportCommand(routineActiveCommand.CodeName);
-    //    if (supportCommandPriority != null)
-    //    {
-    //        SetSupportedActiveCommanData(supportCommandPriority);
-    //        return supportCommandPriority;
-    //    }
-    //    return null;
-    //}
+    public void CompleteAllSupportCommand(CommandData commandData)
+    {
+        if (commandData == null) return;
+        CommandBuilding listSupportCommand = GetListSupportCommandbuilding(commandData.CodeName);
+        if (listSupportCommand != null)
+        {
+            listSupportCommand.CommpleteAllCommand(false);
+        }
+    }
     // CHECK FUNTION
     public bool IsCompleteMainRountineCommand()
     {
         return MainRoutineCommandData.IsComplete;
     }
-    public void CompleteSupportCommand(CommandData routineActiveCommand)
+    public void CompleteSupportCommand(bool isComplete)
     {
-        GetListSupportCommandbuilding(routineActiveCommand.CodeName).CompeleteSupportCommand(true);
+        CommandData activeSupportCommand = ActiveSupportCommand();
+        if (activeSupportCommand != null)
+        {
+            activeSupportCommand.CompleteCommand(isComplete);
+        }
     }
     public bool IsCompleteSupportCommand(CommandData routineActiveCommand)
     {
         if (routineActiveCommand == null) return false;
         var listSupportCommandbuilding = GetListSupportCommandbuilding(routineActiveCommand.CodeName);
         if (listSupportCommandbuilding == null) return false;
-        bool isCompleteSupportCommand =  listSupportCommandbuilding.IsCommpleteAllSupportCommand;
+        bool isCompleteSupportCommand =  listSupportCommandbuilding.IsCommpleteAllCommand;
         return isCompleteSupportCommand;
     }
    

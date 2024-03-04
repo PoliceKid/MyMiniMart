@@ -4,7 +4,8 @@ using UnityEngine;
 public class SpawnerManager : MonoBehaviour
 {
     public static SpawnerManager instance { get; private set; }
-    [SerializeField] List<Transform> SpawnPoints;
+    [SerializeField] private List<Transform> SpawnPoints;
+    [SerializeField] private Transform PlayerSpawnPoint;
     public void Init()
     {
         if(instance == null)
@@ -15,7 +16,7 @@ public class SpawnerManager : MonoBehaviour
         //Test add item to building
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-           CreateUnitView("Player", Vector3.zero, transform);
+           
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {         
@@ -32,6 +33,11 @@ public class SpawnerManager : MonoBehaviour
             }
            
         }
+    }
+    public void SpawnPlayer()
+    {
+        UnitView player = CreateUnitView("Player", PlayerSpawnPoint.position, transform);
+        CameraManager.Instance.FollowTarget(player.gameObject);
     }
     public static ItemView CreateItemView(string codeName, Vector3 pos, Transform parent,bool prefabScale = true)
     {
@@ -53,30 +59,68 @@ public class SpawnerManager : MonoBehaviour
     public static UnitView CreateUnitView(string codeName, Vector3 pos, Transform parent)
     {
         if (string.IsNullOrEmpty(codeName)) return null;
-        var unitResource = Resources.Load($"CommonPrefabs/UnitView") as GameObject;
+        string unitRsName = codeName.Contains("Player") ? "PlayerView" : "UnitView";
+        var unitResource = Resources.Load($"CommonPrefabs/{unitRsName}") as GameObject;
         if (unitResource != null)
         {
 
             if (ConfigManager.Instance.GetUnitConfig(codeName) == null) return null;
             GameObject itemGo = unitResource.SpawnLocal(Vector3.zero, parent, prefabScale: true);
             itemGo.transform.localPosition = pos;
-            UnitView unitView = itemGo.GetComponent<UnitView>();
-            UnitController unitController = codeName.Contains("Customer") ? new CustomerController() :new UnitController();
+
+            UnitConfig unitConfig = ConfigManager.Instance.GetUnitConfig(codeName);
+
+            if (unitConfig == null) return null;
+            UnitView unitView = unitConfig.Type ==0? itemGo.GetComponent<PlayerView>(): itemGo.GetComponent<UnitView>();
+            UnitController unitController = GetUnitControllerByType( (UnitType)unitConfig.Type );
             //codeName.Contains("Shelf") ? new ShevlerController() :
             unitController.Init(codeName,unitView);
             unitView.Init(unitController,pos);
 
-            //Init Action data for command chain data
-            UnitConfig unitConfig = unitView.unitController.unitConfig;
-            if(unitConfig != null)
-            {
+            if(!codeName.Contains("Player"))
+            UnitManager.Instance.AddUnit(unitView);
 
-               
-            }            
+            if (unitView != null) return unitView;
+        }
+        return null;
+    }
+    public static UnitView CreatePlayerView(string codeName, Vector3 pos, Transform parent)
+    {
+        if (string.IsNullOrEmpty(codeName)) return null;
+        var unitResource = Resources.Load($"CommonPrefabs/PlayerView") as GameObject;
+        if (unitResource != null)
+        {
+
+            if (ConfigManager.Instance.GetUnitConfig(codeName) == null) return null;
+            GameObject itemGo = unitResource.SpawnLocal(Vector3.zero, parent, prefabScale: true);
+            itemGo.transform.localPosition = pos;
+
+            UnitConfig unitConfig = ConfigManager.Instance.GetUnitConfig(codeName);
+
+            if (unitConfig == null) return null;
+            UnitView unitView = itemGo.GetComponent<PlayerView>();
+            UnitController unitController = GetUnitControllerByType((UnitType)unitConfig.Type);
+            //codeName.Contains("Shelf") ? new ShevlerController() :
+            unitController.Init(codeName, unitView);
+            unitView.Init(unitController, pos);
             UnitManager.Instance.AddUnit(unitView);
             if (unitView != null) return unitView;
         }
         return null;
+    }
+    private static UnitController GetUnitControllerByType(UnitType type)
+    {
+        switch (type)
+        {
+            case UnitType.Player:
+                return new PlayerController();
+            case UnitType.Worker:
+                return new UnitController();
+            case UnitType.Customer:
+                return new CustomerController();
+            default:
+                return new UnitController();
+        }
     }
     public static GameObject CreateUnitModel(string codeName, Vector3 pos, Transform parent)
     {
@@ -94,4 +138,5 @@ public class SpawnerManager : MonoBehaviour
         int randomIndex = Random.Range(0, SpawnPoints.Count);
         return SpawnPoints[randomIndex];
     }
+
 }

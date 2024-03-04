@@ -2,35 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-public class UnitMovementController : MonoBehaviour
+public class UnitMovementController : MonoBehaviour, IMovement
 {
     public NavMeshAgent agent;
     public bool IsAgentActive => agent.isActiveAndEnabled;
-    public bool ReachedDestination
-    {
-        get
+    public bool ReachedDestination()
+    {       
+        if (!agent.pathPending)
         {
-            if (!agent.pathPending)
+            if (agent.remainingDistance <= agent.stoppingDistance)
             {
-                if (agent.remainingDistance <= agent.stoppingDistance)
+                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                 {
-                    if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
-                    {
-                        return true;
-                    }
+                    return true;
                 }
             }
-            //float remainingDistance = agent.GetPathRemainingDistance();
-            //if ((remainingDistance >= 0
-            //    && remainingDistance <= agent.stoppingDistance
-            //    //&& agent.velocity.sqrMagnitude == 0f
-            //    ))
-            //{
-            //    queueColliderReached = false;
-            //    return true;
-            //
-            return false;
         }
+        return false;
+        
     }
     bool queueColliderReached = false;
     public void Init()
@@ -39,7 +28,7 @@ public class UnitMovementController : MonoBehaviour
         agent.avoidancePriority = Random.Range(25, 100);
     }
     Vector3 PosLast = Vector3.zero;
-    public void MoveTo(Vector3 movePosition)
+    public void HandleMovement(Vector3 movePosition)
     {
         PosLast = movePosition;
         try
@@ -69,5 +58,11 @@ public class UnitMovementController : MonoBehaviour
     {
         return agent;
     }
+
+    public Vector3 GetMovementDir()
+    {
+        throw new System.NotImplementedException();
+    }
+
     public bool isMoving => agent.velocity.sqrMagnitude > 0.01;
 }

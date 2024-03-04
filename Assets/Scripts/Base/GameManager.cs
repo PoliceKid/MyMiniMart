@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private SpawnerManager spawnerManager;
     private PoolManager poolManager;
     private UnitManager unitManager;
+    private CameraManager cameraManager;
     #endregion
     private void Awake()
     {
@@ -33,10 +34,14 @@ public class GameManager : MonoBehaviour
         unitManager ??= FindObjectOfType<UnitManager>();
         if (unitManager != null)
             unitManager.Init();
+        cameraManager ??= FindObjectOfType<CameraManager>();
+        if (cameraManager != null)
+            cameraManager.Init();
     }
     void Start()
     {
         InitManager();
+        spawnerManager.SpawnPlayer();
     }
 
     // Update is called once per frame

@@ -166,6 +166,11 @@ public class BuildingController
     {
         return BuildingData.RemoveUnitAwayQueueSlot(type, Id);
     }
+    public virtual UnitController GetNextUnitProcess(ActionType type)
+    {
+        if (BuildingData.GetTotalUnitJoinQueue(ActionType.Input) == 0) return null;
+        return BuildingData.GetListUnitJoinQueue(ActionType.Input).First();
+    }
     public bool CheckCanJoinQueueSlot(ActionType actionType) => BuildingData.CheckCanJoinQueueSlot(actionType);
     #endregion
     #region CHECKING SLOT ITEM FUNCTION

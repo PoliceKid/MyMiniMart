@@ -1,7 +1,7 @@
 {
     "Player":{
         "Type":0,
-        "BaseMoveSpeed":10
+        "BaseMoveSpeed":20
 
     },
     "_Worker_CashierA":{

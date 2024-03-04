@@ -91,11 +91,16 @@ public class BuildingDataModel
         var listQueueSlot = QueueSlots[actionType.ToString()];
         return listQueueSlot.FirstOrDefault(x => !x.IsOccupied);
     }
-    public int GetUnitJoinQueue(ActionType actionType)
+    public int GetTotalUnitJoinQueue(ActionType actionType)
     {
         if (!QueueSlots.ContainsKey(actionType.ToString())) return 0;
         var listQueueSlot = QueueSlots[actionType.ToString()];
         return listQueueSlot.Count(x => x.IsOccupied);
+    }
+    public List<UnitController> GetListUnitJoinQueue(ActionType actionType)
+    {
+        if (!QueueSlots.ContainsKey(actionType.ToString())) return null;
+        return QueueSlots[actionType.ToString()].Where(x => x.IsOccupied).Select(x => x.OccupierUnit).ToList();
     }
     public bool CheckCanJoinQueueSlot(ActionType actionType)
     {
@@ -110,6 +115,12 @@ public class BuildingDataModel
         queueSlotFree.SetOccupier(unit);
         AddUnitToMap(unit);
         return queueSlotFree;
+    }
+    public QueueSlotDataModel AddUnitToQueueSlot(ActionType type, UnitController unit, QueueSlotDataModel slotCustomer)
+    {
+        if (slotCustomer == null) return null;
+        slotCustomer.SetOccupier(unit);
+        return slotCustomer;
     }
     public UnitController RemoveUnitAwayQueueSlot(ActionType type, string Id)
     {
@@ -130,7 +141,20 @@ public class BuildingDataModel
         }
         return null;
     }
-    private void AddUnitToMap(UnitController unit)
+    public UnitController RemoveUnitAwayQueueSlot(ActionType type, UnitController unitRemove, QueueSlotDataModel slotCustomer)
+    {
+        if (unitRemove != null)
+        {
+            if (slotCustomer != null)
+            {
+                slotCustomer.ResetOccupier();
+                return unitRemove;
+
+            }
+        }
+        return null;
+    }
+    public void AddUnitToMap(UnitController unit)
     {
         if (!unitMaps.Contains(unit))
         {
