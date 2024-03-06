@@ -9,7 +9,6 @@ public class CashierDeskController : BuildingController
     public UnitController ActiveUnitProcess { get; private set; } = null;
 
     public Action<string> OnUpdateUnitFromSlotCustomer = delegate { };
-    public static Action<UnitController> OnUnitFinishRoutine = delegate { };
     public override void Init(BuildingInitData buildingInitData, BuildingView buildingView)
     {
         base.Init(buildingInitData, buildingView);

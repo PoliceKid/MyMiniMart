@@ -3,7 +3,12 @@ guid: e4cbd062eaf79b44e9f4febe5111f6b8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aToon_Palette_Outline
+    second: {fileID: 2100000, guid: 1e55a4865253a8d40b2fe1041ad72f0f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

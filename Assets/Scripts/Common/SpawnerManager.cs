@@ -6,10 +6,13 @@ public class SpawnerManager : MonoBehaviour
     public static SpawnerManager instance { get; private set; }
     [SerializeField] private List<Transform> SpawnPoints;
     [SerializeField] private Transform PlayerSpawnPoint;
+
+    public static List<string> ListHatItems = new List<string>();
     public void Init()
     {
         if(instance == null)
         instance = this;
+        ListHatItems = GameHelper.LoadAllNameOfItemInFolder("HatModels");
     }
     private void Update()
     {
@@ -22,6 +25,9 @@ public class SpawnerManager : MonoBehaviour
         {         
             CreateUnitView("stickman_Customer02", GetSpawnPoint().position, transform);
             CreateUnitView("stickman_Customer03", GetSpawnPoint().position, transform);
+            CreateUnitView("stickman_Customer04", GetSpawnPoint().position, transform);
+            CreateUnitView("stickman_Customer05", GetSpawnPoint().position, transform);
+            CreateUnitView("stickman_Customer06", GetSpawnPoint().position, transform);
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
@@ -132,6 +138,27 @@ public class SpawnerManager : MonoBehaviour
             if (itemGo != null) return itemGo;
         }
         return null;
+    }
+    public string GetRandomHatString()
+    {
+        return GameHelper.GetRandomInList(ListHatItems);
+    }
+
+    public static GameObject CreateHatModel(string codeName, Vector3 pos, Transform parent)
+    {
+        if (string.IsNullOrEmpty(codeName)) return null;
+        var modelResource = Resources.Load($"HatModels/{codeName}") as GameObject;
+        if (modelResource != null)
+        {
+            GameObject itemGo = modelResource.SpawnLocal(Vector3.zero, parent, prefabScale: true);
+            if (itemGo != null) return itemGo;
+        }
+        return null;
+    }
+    public static void DespawnUnit(UnitView unit)
+    {
+        if (unit == null) return;
+        unit.gameObject.Despawn();
     }
     public Transform GetSpawnPoint()
     {

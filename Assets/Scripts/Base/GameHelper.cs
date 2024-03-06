@@ -4,10 +4,10 @@ using UnityEngine;
 using System;
 using UnityEngine.AI;
 using System.Linq;
-public static class GameHelper 
+public static class GameHelper
 {
     // Kh?i t?o t?p h?p slot v?i size v?i high, 1 callback tr? v? item m?i khi t?o ra.
-    public static List<GameObject> InitListItemsSlotPos(Transform centerPos,Transform parent,Vector2 size,int high, float distance = 1f, Action<GameObject> callback = null)
+    public static List<GameObject> InitListItemsSlotPos(Transform centerPos, Transform parent, Vector2 size, int high, float distance = 1f, Action<GameObject> callback = null)
     {
         List<GameObject> list = new List<GameObject>();
         Vector3 conrnerPosition = new Vector3(centerPos.position.x - size.x / 2 * distance, centerPos.position.y, centerPos.position.z);
@@ -24,11 +24,11 @@ public static class GameHelper
                     itemSlot.transform.parent = parent;
                     list.Add(itemSlot);
 
-                    if(callback != null)
+                    if (callback != null)
                     {
                         callback?.Invoke(itemSlot);
                     }
-                    
+
                 }
             }
         }
@@ -62,5 +62,27 @@ public static class GameHelper
     public static ActionType ConvertStringToEnum(string input)
     {
         return (ActionType)Enum.Parse(typeof(ActionType), input);
+    }
+    public static List<string> LoadAllNameOfItemInFolder(string folderPath) {
+        UnityEngine.Object[] loadedItems = Resources.LoadAll(folderPath);
+        List<string> itemNames = new List<string>();
+
+        // L?c ra tên c?a các tài nguyên
+        foreach (var item in loadedItems)
+        {
+            // L?y tên tài nguyên
+            string itemName = item.name;
+
+            // Thêm tên vào danh sách
+            itemNames.Add(itemName);
+        }
+        return itemNames;
+    }
+    public static T GetRandomInList<T>( List<T> list)
+    {
+        if (list == null) return default(T);
+        int randomIndex = UnityEngine.Random.Range(0, list.Count - 1);
+
+        return list[randomIndex];
     }
 }

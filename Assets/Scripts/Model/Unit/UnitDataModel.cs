@@ -10,6 +10,7 @@ public class UnitDataModel
     public string CodeName { get; private set; }
     public UnitType UnitType { get; private set; }
     public float Speed { get; private set; }
+    public string HatCodeName { get; private set; }
     #endregion
     #region DATA
     public Vector3? TargetDestination { get; protected set; } = null;
@@ -30,6 +31,7 @@ public class UnitDataModel
     public CommandData MainActiveCommand { get; protected set; }
 
     public bool IsLoopInfinite { get; protected set; }
+    public bool IsCanExited { get; protected set; }
 
     public int RoutineCommandIndex = -1;
     //State
@@ -39,7 +41,7 @@ public class UnitDataModel
     #region ACTION     
     public event System.Action<BuildingController> OnTargetBuildingSet;
     public event System.Action<BuildingController,CommandData,string> OnCommandComplete;// Last join building, command active, Id
-
+    public Action<UnitView> OnCompleteRoutine; 
     #endregion
     public UnitDataModel(string codeName, UnitType unitType, float speed)
     {
@@ -52,6 +54,10 @@ public class UnitDataModel
     public void SetSpeed(float speed)
     {
         Speed = speed;
+    }
+    public void SetHatCodeName(string hatCodeName)
+    {
+        HatCodeName = hatCodeName;
     }
     #region COMMAND ROUTINE 
     // INIT GET SET
@@ -72,6 +78,10 @@ public class UnitDataModel
     public void SetLoopInfinite(bool isLoopInfinite)
     {
         IsLoopInfinite = isLoopInfinite;
+    }
+    public void SetExited(bool isCanExited)
+    {
+        IsCanExited = isCanExited;
     }
     public void SetSupportedActiveCommanData(CommandData commandData)
     {

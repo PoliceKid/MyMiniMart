@@ -15,7 +15,8 @@ public class BuildingView : MonoBehaviour
     public GameObject ModelProcess;
     [SerializeField]
     public Transform DummySpawnPos;
-   
+    [SerializeField]
+    public Transform InteractRange;
 
     [SerializeField]
     public List<SlotContainer> InputItemSlots = new List<SlotContainer>();
@@ -78,10 +79,6 @@ public class BuildingView : MonoBehaviour
 
         }
     }
-    //private void Update()
-    //{
-    //    Processing();
-    //}
     private bool CanProcess()
     {
         return !IsLocked && hasInit && building.BuildingConfig != null && building.CheckAvaliableSlotForProcessing();
@@ -99,7 +96,7 @@ public class BuildingView : MonoBehaviour
     }
     public void RemoveItem(ItemSlotType type, ItemController item)
     {
-        sequence.Append(item.itemView.transform.DOMove(ModelProcess.transform.position, 1).OnComplete(() =>
+        sequence?.Append(item.itemView.transform.DOMove(ModelProcess.transform.position, 1).OnComplete(() =>
         {
             item.itemView.gameObject.Despawn();
 
@@ -108,11 +105,8 @@ public class BuildingView : MonoBehaviour
     public void AddItem(ItemSlotType type,ItemView itemView,ItemSlotDataModel freeSlot)
     {
         if (freeSlot == null) return;
-        itemView.transform.position = ModelProcess.transform.position;
-        sequence.Append(itemView.transform.DOMove(freeSlot.Slotpoint.position, 1).OnComplete(() =>
-        {
-            // Do something when complete
-        }));
+        itemView.transform.position = ModelProcess.transform.position;        
+        sequence?.Append(itemView.transform.DOMove(freeSlot.Slotpoint.position, 1));
     }
    
     public void RemoveItem(ItemView itemView)
@@ -135,23 +129,16 @@ public class BuildingView : MonoBehaviour
         target.DOLocalMove(slotPoint.localPosition, 0.5f);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        //Debug.Log("trigger unit");
-        //UnitView unitView = other.GetComponentInParent<PlayerView>();
-        //if(unitView != null)
-        //{
-        //    if (!unitView.unitController.unitData.IsPlayer) return;
-        //    unitView.AddItemToBuilding(this);
-        //    unitView.GetItemFromBuilding(this);
-        //}
-    }
     public SlotContainer FindNearestActionPoint(Vector3 playerPosition)
     {    
         SlotContainer nearestActionPoint = ActionSlots
             .OrderBy(ap => Vector3.Distance(playerPosition, ap.ContainerPoint.position))
             .FirstOrDefault();
         return nearestActionPoint;
+    }
+    public void OnPlayerInteract(float scaleValue)
+    {
+        InteractRange?.DOScale(Vector3.one * scaleValue, 0.2f);
     }
 }
 [System.Serializable]
@@ -165,9 +152,6 @@ public class SlotContainer
     public void Init()
     {
         ContainerPoint = SlotsContainer[0];
-        //SphereCollider ContainerCollider = ContainerPoint.gameObject.AddComponent<SphereCollider>();
-        //ContainerCollider.radius = 0.025f;
-        //ContainerCollider.isTrigger = true;
     }
     public void Init(int high)
     {

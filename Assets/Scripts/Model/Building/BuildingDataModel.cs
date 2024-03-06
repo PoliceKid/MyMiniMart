@@ -15,6 +15,7 @@ public class BuildingDataModel
     public List<UnitController> unitMaps = new List<UnitController>();
 
     public Action<string> OnUpdateItem = delegate { };
+    public Action<string> OnUpdateQueueSlot = delegate { };
     #region INIT FUNCTION
     public void Init(BuildingInitData buildingInitData)
     {
@@ -134,6 +135,7 @@ public class BuildingDataModel
                 {
                     removeSlotItem.ResetOccupier();
                     RemoveUnitAwayMaps(Id);
+                    OnUpdateQueueSlot?.Invoke(CodeName);
                     return unit;
 
                 }
@@ -215,7 +217,7 @@ public class BuildingDataModel
     }
     public List<string> GetListItemCanPay()
     {
-        return new List<string> { "egg", "bread", "veg_Tomato", "veg_Wheat", "flourBag" };
+        return new List<string> { "egg", "bread", "veg_Tomato", "veg_Wheat", "flourBag", "milk", "tomatoSauce" };
     }
     public ItemController GetItemWithId(string Id)
     {

@@ -19,10 +19,19 @@ public class UnitController : IOccupier
     {        
         this.unitView = unitView;
         LoadConfig(codeName);
+
         unitData = new UnitDataModel(codeName, (UnitType)unitConfig.Type, unitConfig.BaseMoveSpeed);
+        string hatCodename = SpawnerManager.instance.GetRandomHatString();
+        SetHatCodeName(hatCodename);
+
         GetTargetBuilding = BuildingManager.Instance.GetTargetBuilding;
         InitRoutineCommand(unitConfig);
 
+    }
+    public void SetHatCodeName(string hatCodeName)
+    {
+        if (hatCodeName == null) return;
+        unitData.SetHatCodeName(hatCodeName);
     }
     public void SetSpeed(float speed)
     {
@@ -170,8 +179,7 @@ public class UnitController : IOccupier
     }
     public virtual void NextCommand(CommandData nextCommand = null)
     {
-        if (unitData.IsCompleteRoutine && !unitConfig.IsLoopInfinite) return;
-        if (GetActiveRoutineCommand() == null) return;
+        if (unitData.IsCompleteRoutine ) return;
         if (nextCommand != null)
         {
             unitData.SetMainActiveCommand(nextCommand);
@@ -210,7 +218,11 @@ public class UnitController : IOccupier
                 nextCommand = NextSupportCommand(activeCommandTemp);                       
             }
         }
-    
+        if(nextCommand != null)
+        {
+            BuildingController targetBuilding = GetTargetBuilding(nextCommand);
+            if (!targetBuilding.CheckCanJoinQueueSlot(GameHelper.ConvertStringToEnum(nextCommand.ActionType))) return null;
+        }
         return nextCommand;
     }
     public virtual CommandData GetActiveRoutineCommand()
@@ -231,6 +243,7 @@ public class UnitController : IOccupier
         if (listRoutineCommand.Count == 0) return null;
         if (index != -1)
         {
+           
             index = Math.Clamp(index, 0, listRoutineCommand.Count - 1);
             return listRoutineCommand[index];
         }
@@ -252,13 +265,6 @@ public class UnitController : IOccupier
         }
         
     }
-    //public virtual CommandData GetNextRoutineCommand(int index)
-    //{
-    //    List<CommandData> listRoutineCommand = unitData.MainRoutineCommandData.Commands;
-    //    if (listRoutineCommand.Count == 0) return null;
-    //    index = Math.Clamp(index, 0, listRoutineCommand.Count - 1);
-    //    return listRoutineCommand[index];
-    //}
     public virtual CommandData GetNextSupportCommand(string commandCodeName)
     {
         if (!unitData.CommandBuildings.ContainsKey(commandCodeName)) return null;
@@ -307,24 +313,26 @@ public class UnitController : IOccupier
     {
         return commandData.IsComplete;
     }
-    public void SetTargetBuilding( ActionType type, BuildingController buildingController)
+    public virtual bool SetTargetBuilding( ActionType type, BuildingController buildingController)
     {
         //Call API
-        if (buildingController == null) return;
-        if (!buildingController.CheckCanJoinQueueSlot(type)) return;
+        if (buildingController == null) return false;
+        if (!buildingController.CheckCanJoinQueueSlot(type)) return false;
         
         unitData.SetTargetBuilding(buildingController);
         QueueSlotDataModel queueSlotFree = buildingController.AddUnitToQueueSlot(type, this);
         //Call View
         unitView.SetTargetMovePosition(queueSlotFree.Slotpoint.position, GetAnimationType());
         StartGotoDestination();
+        return true;
     }
-    public void CompleteActiveCommandAction(ActionType type, BuildingController lastJoinBuilding)
+    public virtual void CompleteActiveCommandAction(ActionType type, BuildingController lastJoinBuilding)
     {
         // Call API
         if (lastJoinBuilding != null)
         {
             lastJoinBuilding.RemoveUnitAwayQueueSlot(type, unitData.Id);
+            
         }
     }
     public void Tick(float deltaTime)
@@ -360,8 +368,19 @@ public class UnitController : IOccupier
         if (CheckDestinationReached())
         {
             unitView.ChangeState("Idle_Happy_Carry");
+            if (unitData.IsCompleteRoutine)
+            {
+                unitData.SetState(UnitState.None);
+                unitData.SetExited(true);
+                return;
+            }
             unitData.SetState(UnitState.Actioning);
         }
+    }
+    public virtual void HandleWaiting()
+    {
+        unitView.ChangeState("Idle_Happy_Carry");
+        unitData.SetState(UnitState.None);
     }
     public virtual void HandleCommanding()
     {
@@ -371,28 +390,38 @@ public class UnitController : IOccupier
         {
             if(nextCommand != GetMainActiveCommand())
             {
-                
-                if (unitData.CodeName.Contains("Customer03"))
-                {
-                    Debug.Log(nextCommand.CodeName);
-                }
-                
                 NextCommand(nextCommand);
             }
-        
         }
     }
+
     public virtual void HandleActioning()
     {
         CommandData activeCommand = GetMainActiveCommand();
         BuildingController targetBuilding = GetTargetBuilding(activeCommand);
         if (targetBuilding == null) return;
-        if (!targetBuilding.CheckUnitCanProcessItem(this.unitData.Id)) return;
+        if (!targetBuilding.CheckUnitCanProcessItem(unitData.Id))
+        {
+            unitData.SetState(UnitState.Waiting);
+            return;
+        }
         AIProcessWithBuilding(activeCommand);
-        // Do something here for AI behaviour. Ex If building full item, waiting to add item for building, then enable next routine command.
-        // TODO
-        unitData.SetState(UnitState.Commanding);
+        if (IsCompleteCommand(activeCommand))
+        {
+
+            if (unitData.IsCompleteRoutine)
+            {
+                FinishRoutine(UnitManager.Instance.GetExitPoint().position);
+                return;
+            }
+            unitData.SetState(UnitState.Commanding);
+        }
+        else
+        {
+            unitData.SetState(UnitState.Waiting);
+        }
     }
+  
     public virtual ActionType GetActiveCommandType()
     {
         return unitData.GetActiveActionType();
@@ -401,7 +430,7 @@ public class UnitController : IOccupier
     {
          return unitData.IsEmptyItemCarry ? AnimationType.Run : AnimationType.Run_Carry;
     }
-    public void AIProcessWithBuilding(CommandData activeCommand)
+    public virtual void AIProcessWithBuilding(CommandData activeCommand)
     {
         ActionType type = GameHelper.ConvertStringToEnum(activeCommand.ActionType);
         BuildingController targetBuilding = GetTargetBuilding(activeCommand);
@@ -421,19 +450,18 @@ public class UnitController : IOccupier
                 break;
         }
         // After actioning complete command
-        if (activeCommand != null)
+        if (CheckCanCompleteCommand(activeCommand))
         {
             activeCommand.CompleteCommand(true);
-        }
-        if (IsCompleteCommand(activeCommand))
-        {
             if (unitData.TargetBuilding != null)
             {
                 CompleteActiveCommandAction(GetActiveCommandType(), unitData.TargetBuilding);
             }
         }
-      
-
+    }
+    public virtual bool CheckCanCompleteCommand(CommandData targetCommand)
+    {
+        return true;
     }
     public virtual void HandleGetItemFromBuilding(CommandData targetCommand ,BuildingController buildingController)
     {
@@ -441,6 +469,11 @@ public class UnitController : IOccupier
     }
     public virtual void FinishRoutine(Vector3 exitPoint)
     {
+        unitData.OnCompleteRoutine?.Invoke(unitView);
+    }
+    public void Disposed()
+    {
+
     }
     #endregion
 }

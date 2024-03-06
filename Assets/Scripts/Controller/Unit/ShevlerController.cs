@@ -79,8 +79,6 @@ public class ShevlerController : UnitController
         if (ShelfBuildings.ContainsKey(commandCodeName))
         {
             CommandData supportedCommand = GetSupportCommandBuildingPriority(commandCodeName);
-            //SetActiveRoutineCommand(supportedCommand);
-            GetActiveRoutineCommand().CompleteCommand(true);
             return supportedCommand;
         }
         return null;

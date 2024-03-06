@@ -36,7 +36,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman
+    path: stickman_Customer01 (1)/Rig_Stickman
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -79,7 +79,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -131,7 +131,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -174,7 +174,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -208,7 +208,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -260,7 +260,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -321,7 +321,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -436,7 +436,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -497,7 +497,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -567,7 +567,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -619,7 +619,59 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.03292513, y: -0.042423412, z: 0.065930635, w: 0.9963781}
+        inSlope: {x: -0.04747018, y: -0.02330236, z: -0.27559787, w: 0.018153189}
+        outSlope: {x: -0.04747018, y: -0.02330236, z: -0.27559787, w: 0.018153189}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.4166667
+        value: {x: 0.011702819, y: -0.05006072, z: -0.04786248, w: 0.99753004}
+        inSlope: {x: -0.12276846, y: -0.0033783573, z: -0.15267408, w: -0.0060009984}
+        outSlope: {x: -0.12276846, y: -0.0033783573, z: -0.15267408, w: -0.0060009984}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: -0.033110905, y: -0.043825284, z: -0.0017962288, w: 0.9984888}
+        inSlope: {x: -0.20865014, y: 0.0542237, z: 0.44555834, w: -0.0032240185}
+        outSlope: {x: -0.20865014, y: 0.0542237, z: 0.44555834, w: -0.0032240185}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.75000006
+        value: {x: -0.04033214, y: -0.042171106, z: 0.013000767, w: 0.9982114}
+        inSlope: {x: 0.0012232015, y: -0.0002275412, z: -0.0022721428, w: 0.00006973757}
+        outSlope: {x: 0.0012232015, y: -0.0002275412, z: -0.0022721428, w: 0.00006973757}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 1
+        value: {x: -0.037714154, y: -0.042671904, z: 0.008133345, w: 0.99834394}
+        inSlope: {x: 0.0019175647, y: -0.00037729912, z: -0.0035683599, w: 0.000085831074}
+        outSlope: {x: 0.0019175647, y: -0.00037729912, z: -0.0035683599, w: 0.000085831074}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandProp
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -716,7 +768,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -849,7 +901,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -964,7 +1016,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -998,7 +1050,248 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.75511986, y: 0.16103384, z: 0.5609682, w: 0.2986248}
+        inSlope: {x: -0.30750272, y: 0.8910745, z: 0.02962589, w: -1.3926833}
+        outSlope: {x: -0.30750272, y: 0.8910745, z: 0.02962589, w: -1.3926833}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.06666667
+        value: {x: -0.7562082, y: 0.21214919, z: 0.58103085, w: 0.21341294}
+        inSlope: {x: 0.8042873, y: -0.16504394, z: 1.3126643, w: -0.6102813}
+        outSlope: {x: 0.8042873, y: -0.16504394, z: 1.3126643, w: -0.6102813}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.083333336
+        value: {x: -0.7378894, y: 0.20227052, z: 0.60939384, w: 0.20795433}
+        inSlope: {x: 1.7962089, y: -0.7934049, z: 2.4659455, w: -0.34563878}
+        outSlope: {x: 1.7962089, y: -0.7934049, z: 2.4659455, w: -0.34563878}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.10000001
+        value: {x: -0.69633454, y: 0.18570235, z: 0.66322905, w: 0.20189165}
+        inSlope: {x: 2.2731164, y: 0.5402695, z: 2.8406413, w: -2.2876852}
+        outSlope: {x: 2.2731164, y: 0.5402695, z: 2.8406413, w: -2.2876852}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.116666675
+        value: {x: -0.66211885, y: 0.2202795, z: 0.7040819, w: 0.13169816}
+        inSlope: {x: 0.39810246, y: 2.5854397, z: 0.4239679, w: -5.27219}
+        outSlope: {x: 0.39810246, y: 2.5854397, z: 0.4239679, w: -5.27219}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.13333334
+        value: {x: -0.68306446, y: 0.27188367, z: 0.6773613, w: 0.02615198}
+        inSlope: {x: -0.51800615, y: 2.7013357, z: -1.3422669, w: -6.532552}
+        outSlope: {x: -0.51800615, y: 2.7013357, z: -1.3422669, w: -6.532552}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.15
+        value: {x: -0.6793857, y: 0.310324, z: 0.65933967, w: -0.08605356}
+        inSlope: {x: 2.177911, y: 2.16618, z: 0.15745103, w: -7.003744}
+        outSlope: {x: 2.177911, y: 2.16618, z: 0.15745103, w: -7.003744}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.16666667
+        value: {x: -0.61046743, y: 0.34408966, z: 0.6826097, w: -0.20730615}
+        inSlope: {x: 5.2392397, y: 1.6201473, z: 1.6665692, w: -6.9726734}
+        outSlope: {x: 5.2392397, y: 1.6201473, z: 1.6665692, w: -6.9726734}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.18333334
+        value: {x: -0.5047444, y: 0.36432892, z: 0.71489197, w: -0.318476}
+        inSlope: {x: 6.260312, y: 1.2522067, z: 0.32063723, w: -7.4970264}
+        outSlope: {x: 6.260312, y: 1.2522067, z: 0.32063723, w: -7.4970264}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.20000002
+        value: {x: -0.4017903, y: 0.3858299, z: 0.69329756, w: -0.45720714}
+        inSlope: {x: 6.626097, y: 0.9169395, z: -2.0243683, w: -8.049627}
+        outSlope: {x: 6.626097, y: 0.9169395, z: -2.0243683, w: -8.049627}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.21666668
+        value: {x: -0.28387442, y: 0.3948936, z: 0.647413, w: -0.586797}
+        inSlope: {x: 7.1715846, y: -0.008507073, z: -3.3865573, w: -7.240715}
+        outSlope: {x: 7.1715846, y: -0.008507073, z: -3.3865573, w: -7.240715}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.23333335
+        value: {x: -0.16273749, y: 0.38554633, z: 0.5804123, w: -0.6985643}
+        inSlope: {x: 6.86844, y: -0.5644497, z: -4.1815195, w: -5.5846477}
+        outSlope: {x: 6.86844, y: -0.5644497, z: -4.1815195, w: -5.5846477}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.25
+        value: {x: -0.05492653, y: 0.3760786, z: 0.5080291, w: -0.77295184}
+        inSlope: {x: 5.7048063, y: -1.0610359, z: -4.2187653, w: -3.840039}
+        outSlope: {x: 5.7048063, y: -1.0610359, z: -4.2187653, w: -3.840039}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.28333336
+        value: {x: 0.101976365, y: 0.32658342, z: 0.36979273, w: -0.86382717}
+        inSlope: {x: 3.9982576, y: -1.1353824, z: -3.9412246, w: -1.7238858}
+        outSlope: {x: 3.9982576, y: -1.1353824, z: -3.9412246, w: -1.7238858}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.3166667
+        value: {x: 0.19943966, y: 0.30055076, z: 0.2612465, w: -0.8953454}
+        inSlope: {x: 1.8988982, y: -0.93835944, z: -2.6137414, w: -0.6762099}
+        outSlope: {x: 1.8988982, y: -0.93835944, z: -2.6137414, w: -0.6762099}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.40000004
+        value: {x: 0.24477547, y: 0.11840341, z: 0.08215553, w: -0.95880973}
+        inSlope: {x: -0.016073167, y: -2.9800043, z: -2.0438242, w: -0.5446368}
+        outSlope: {x: -0.016073167, y: -2.9800043, z: -2.0438242, w: -0.5446368}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.4666667
+        value: {x: 0.25400695, y: -0.05566462, z: -0.09694703, w: -0.9607202}
+        inSlope: {x: 0.4292228, y: -1.6903083, z: -3.9763103, w: 0.6313493}
+        outSlope: {x: 0.4292228, y: -1.6903083, z: -3.9763103, w: 0.6313493}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: 0.27262533, y: -0.0991686, z: -0.23677273, w: -0.9272431}
+        inSlope: {x: 0.5541691, y: -0.7976559, z: -3.5011575, w: 1.0987947}
+        outSlope: {x: 0.5541691, y: -0.7976559, z: -3.5011575, w: 1.0987947}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5166667
+        value: {x: 0.28047538, y: -0.10594054, z: -0.28571752, w: -0.9102064}
+        inSlope: {x: 0.3295446, y: -0.25344926, z: -2.0363677, w: 0.7312424}
+        outSlope: {x: 0.3295446, y: -0.25344926, z: -2.0363677, w: 0.7312424}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.53333336
+        value: {x: 0.28361017, y: -0.107616924, z: -0.30465177, w: -0.90286833}
+        inSlope: {x: -1.138264, y: 0.21665095, z: 0.79110485, w: -0.5820507}
+        outSlope: {x: -1.138264, y: 0.21665095, z: 0.79110485, w: -0.5820507}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.55
+        value: {x: 0.24253328, y: -0.09871885, z: -0.25934738, w: -0.92960805}
+        inSlope: {x: -4.098108, y: 0.9104022, z: 4.5158525, w: -2.1337714}
+        outSlope: {x: -4.098108, y: 0.9104022, z: 4.5158525, w: -2.1337714}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5666667
+        value: {x: 0.14700636, y: -0.077270135, z: -0.15412311, w: -0.97399414}
+        inSlope: {x: -5.787814, y: 1.3289443, z: 6.3701944, w: -1.9970555}
+        outSlope: {x: -5.787814, y: 1.3289443, z: 6.3701944, w: -1.9970555}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5833334
+        value: {x: 0.049605977, y: -0.054420672, z: -0.047007382, w: -0.99617666}
+        inSlope: {x: -4.216523, y: 0.9980769, z: 4.635522, w: -0.7504935}
+        outSlope: {x: -4.216523, y: 0.9980769, z: 4.635522, w: -0.7504935}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.6
+        value: {x: 0.006455717, y: -0.044000935, z: 0.00039413548, w: -0.99901056}
+        inSlope: {x: -1.294509, y: 0.31259242, z: 1.4220469, w: -0.08501717}
+        outSlope: {x: -1.294509, y: 0.31259242, z: 1.4220469, w: -0.08501717}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 0.6166667
+        value: {x: 0.006455717, y: -0.044000935, z: 0.00039413548, w: -0.99901056}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      - serializedVersion: 3
+        time: 1
+        value: {x: 0.006455717, y: -0.044000935, z: 0.00039413548, w: -0.99901056}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334, w: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandProp
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1059,7 +1352,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1147,7 +1440,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1181,7 +1474,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1224,7 +1517,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1285,7 +1578,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1319,7 +1612,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot
   m_CompressedRotationCurves: []
   m_EulerCurves: []
   m_PositionCurves:
@@ -1347,7 +1640,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman
+    path: stickman_Customer01 (1)/Rig_Stickman
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1444,7 +1737,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1469,7 +1762,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1494,7 +1787,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1519,7 +1812,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1544,7 +1837,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1569,7 +1862,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1675,7 +1968,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1700,7 +1993,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1725,7 +2018,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1750,7 +2043,32 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.000006045848, y: 0.0038308534, z: 0.00015961341}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 1
+        value: {x: 0.000006045848, y: 0.0038308534, z: 0.00015961341}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandProp
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1775,7 +2093,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1800,7 +2118,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1825,7 +2143,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1850,7 +2168,32 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: -0.000013714954, y: 0.0033482318, z: -0.000022186636}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 1
+        value: {x: -0.000013714954, y: 0.0033482318, z: -0.000022186636}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandProp
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1875,7 +2218,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1900,7 +2243,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1925,7 +2268,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1950,7 +2293,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1975,7 +2318,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2000,7 +2343,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot
   m_ScaleCurves:
   - curve:
       serializedVersion: 2
@@ -2026,7 +2369,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2051,7 +2394,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2076,7 +2419,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2101,7 +2444,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2126,7 +2469,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2151,7 +2494,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2176,7 +2519,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2201,7 +2544,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2226,7 +2569,32 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.9999999, y: 1.0000001, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 1
+        value: {x: 0.9999999, y: 1.0000001, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandProp
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2251,7 +2619,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2276,7 +2644,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2301,7 +2669,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2326,7 +2694,32 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 1
+        value: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandProp
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2351,7 +2744,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2376,7 +2769,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2401,7 +2794,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2426,7 +2819,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2451,7 +2844,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2476,7 +2869,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: _Worker_CashierA/Vehicle/stickman_Worker2/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot
+    path: stickman_Customer01 (1)/Rig_Stickman/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot
   m_FloatCurves: []
   m_PPtrCurves: []
   m_SampleRate: 60
@@ -2485,7 +2878,476 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 3425665014
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2341868351
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3425665014
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 4029137980
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3224461061
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 741594683
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3946674038
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1474827691
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2341868351
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3949480443
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 790071092
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2035426407
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2469738787
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2563477873
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3260460657
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3707802333
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3068959546
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1530873358
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 25297596
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3378651465
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2201790254
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 168033451
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3193328796
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 4168538218
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1686320203
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 4029137980
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3224461061
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 741594683
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3946674038
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1474827691
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3949480443
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 790071092
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2035426407
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2469738787
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2563477873
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3260460657
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3707802333
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3068959546
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1530873358
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 25297596
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3378651465
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2201790254
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 168033451
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3193328796
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 4168538218
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1686320203
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 4029137980
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3224461061
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 741594683
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3946674038
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1474827691
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2341868351
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3949480443
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 790071092
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2035426407
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2469738787
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2563477873
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3260460657
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3707802333
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3068959546
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1530873358
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 25297596
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3378651465
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2201790254
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 168033451
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3193328796
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 4168538218
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
     pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
@@ -2497,7 +3359,7 @@ AnimationClip:
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0

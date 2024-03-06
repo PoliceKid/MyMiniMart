@@ -1989,6 +1989,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -2297,6 +2298,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 8072075794659398166}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots:
   - CodeName: veg_Tomato
     SlotsContainer:
@@ -2387,6 +2389,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -3122,6 +3125,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -3222,6 +3226,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -4244,6 +4249,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -4485,6 +4491,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -4940,6 +4947,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 8158507996433242715}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots:
   - CodeName: veg_Wheat
@@ -5140,6 +5148,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -8832,6 +8841,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -9543,6 +9553,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -9641,6 +9652,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -13101,6 +13113,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 5374647078409932279}
   InputItemSlots:
   - CodeName: veg_Wheat
     SlotsContainer:
@@ -14404,7 +14417,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4631492519087523113}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1983901672930838463
 GameObject:
@@ -15177,6 +15190,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 5373377084057166030}
   InputItemSlots:
   - CodeName: bread
     SlotsContainer:
@@ -15268,6 +15282,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots:
   - CodeName: anything
     SlotsContainer:
@@ -16591,6 +16606,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -17691,6 +17707,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -19551,6 +19568,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 2662420971790312279}
   InputItemSlots:
   - CodeName: milk
     SlotsContainer:
@@ -20635,6 +20653,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 2623950506795418032}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots:
   - CodeName: veg_Wheat
@@ -20710,6 +20729,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 2623950506795418032}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots:
   - CodeName: veg_Wheat
@@ -21406,6 +21426,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 7719042257518030659}
   InputItemSlots:
   - CodeName: egg
     SlotsContainer:
@@ -22753,6 +22774,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -25039,6 +25061,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 5850260098208725828}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -27688,6 +27711,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 4813384140490075018}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 6072271485326077700}
   InputItemSlots:
   - CodeName: 
     SlotsContainer: []
@@ -28544,6 +28568,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots:
   - CodeName: anything
     SlotsContainer:
@@ -28787,6 +28812,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -28964,6 +28990,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -31242,6 +31269,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -32249,6 +32277,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -35109,7 +35138,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4631492519087523113}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5057729111137756041
 GameObject:
@@ -35347,6 +35376,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 77530902827945894}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots:
   - CodeName: veg_Tomato
@@ -36464,6 +36494,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 2342076531328526710}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots:
   - CodeName: veg_Tomato
@@ -37034,6 +37065,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -37379,8 +37411,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4346220131492011536}
   - {fileID: 1652621240796736898}
+  - {fileID: 4346220131492011536}
   - {fileID: 803735384478380907}
   - {fileID: 7606045953729650302}
   - {fileID: 3807593890402965962}
@@ -38868,6 +38900,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -41580,6 +41613,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 2619656879692014129}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots:
   - CodeName: veg_Wheat
     SlotsContainer:
@@ -42738,7 +42772,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6460900278899091478}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6117062449570910064
 GameObject:
@@ -44595,6 +44629,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -48793,6 +48828,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -49930,6 +49966,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -52994,6 +53031,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 4402921753247100008}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots:
   - CodeName: veg_Tomato
     SlotsContainer:
@@ -54428,6 +54466,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 7321797969798130639}
   InputItemSlots:
   - CodeName: veg_Tomato
     SlotsContainer:
@@ -54558,6 +54597,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 6693540430236549897}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots:
   - CodeName: veg_Tomato
@@ -56102,7 +56142,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6460900278899091478}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8066734758875614836
 GameObject:
@@ -56164,6 +56204,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 8539665926210527176}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 3581833452616630128}
   InputItemSlots:
   - CodeName: veg_Tomato
     SlotsContainer:
@@ -56695,6 +56736,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -57415,6 +57457,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 4470017374733005709}
   InputItemSlots:
   - CodeName: tomatoSauce
     SlotsContainer:
@@ -58717,6 +58760,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 2972915136390403065}
   InputItemSlots:
   - CodeName: flourBag
     SlotsContainer:
@@ -59654,6 +59698,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 5288077148768351143}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 315439843043395286}
   InputItemSlots:
   - CodeName: veg_Wheat
     SlotsContainer:
@@ -60259,8 +60304,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6647196440188871026}
   - {fileID: 171146841679135699}
+  - {fileID: 6647196440188871026}
   - {fileID: 4294269330430699821}
   - {fileID: 1147218033498387644}
   - {fileID: 440359715329174176}
@@ -60917,6 +60962,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -61599,6 +61645,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots:
   - CodeName: anything
     SlotsContainer:
@@ -62440,6 +62487,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 1159775171997793055}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 8230156944923102113}
   InputItemSlots:
   - CodeName: egg
     SlotsContainer:
@@ -62580,6 +62628,7 @@ MonoBehaviour:
   IsLocked: 1
   ModelProcess: {fileID: 0}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 0}
   InputItemSlots: []
   OutputItemSlots: []
   ActionSlots: []
@@ -62787,6 +62836,7 @@ MonoBehaviour:
   IsLocked: 0
   ModelProcess: {fileID: 4349221844619334000}
   DummySpawnPos: {fileID: 0}
+  InteractRange: {fileID: 5621927842086816644}
   InputItemSlots:
   - CodeName: anything
     SlotsContainer:

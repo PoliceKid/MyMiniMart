@@ -54,6 +54,7 @@ public class PlayerView : UnitView
         BuildingView targetBuildingView = other.GetComponent<BuildingView>();
         if (targetBuildingView != null)
         {
+            targetBuildingView?.OnPlayerInteract(1.2f);
             SlotContainer nearestActionPoint = targetBuildingView.FindNearestActionPoint(transform.position);
             if(nearestActionPoint != null)
             {
@@ -74,14 +75,11 @@ public class PlayerView : UnitView
                         break;
                 }
             }
-            //if(Vector3.Distance(transform.position,))
-
-            //buildingView.AddItemToBuilding(this);
-            //buildingView.GetItemFromBuilding(this);
         }
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerExit(Collider other)
     {
-        
+        BuildingView targetBuildingView = other.GetComponent<BuildingView>();
+        targetBuildingView?.OnPlayerInteract(1);
     }
 }

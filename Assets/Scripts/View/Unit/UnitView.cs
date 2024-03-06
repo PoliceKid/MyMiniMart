@@ -16,14 +16,13 @@ public class UnitView : MonoBehaviour
     public UnitController unitController { get; private set; }
     public IMovement UnitMovement { get; private set; }
     public UnitAnimationController UnitAnimation{ get; private set; }
-    
     #endregion
     #region INIT FUNCTIONS
     public virtual void Init(UnitController unitController, Vector3 startingPosition)
     {
         this.unitController = unitController;
         RegisterEvents(unitController);
-        LoadModel(unitController.unitData.CodeName);
+        LoadModel(unitController.unitData.CodeName, unitController.unitData.HatCodeName);
 
         UnitMovement = GetComponent<IMovement>();
         UnitAnimation = GetComponent<UnitAnimationController>();
@@ -36,9 +35,16 @@ public class UnitView : MonoBehaviour
         // Init Item slot carry
         InitListItemsCarryPos();
     }
-    public void LoadModel(string codeName)
+    public void LoadModel(string codeName,string hatCodeName)
     {
-        SpawnerManager.CreateUnitModel(codeName,Vector3.zero, VisualContainer);
+        GameObject unitModelGO = SpawnerManager.CreateUnitModel(codeName,Vector3.zero, VisualContainer);
+      
+        UnitModelView unitModelView = unitModelGO.GetComponent<UnitModelView>();
+        GameObject hatModelGO = SpawnerManager.CreateHatModel(hatCodeName, Vector3.zero, unitModelView.hatSlotTransform);
+        if(hatCodeName != null)
+        {
+           unitModelView?.InitModel(hatModelGO);
+        }
     }
     protected void RegisterEvents(UnitController unit)
     {
@@ -75,9 +81,10 @@ public class UnitView : MonoBehaviour
     public void GetItem(ItemView itemView,Transform slotPoint)
     {
         if (itemView == null) return;
+
         itemView.transform.parent = transform;
         Transform target = itemView.transform;
-        target.DOLocalMove(slotPoint.localPosition, 0.5f);
+        target.DOLocalMove(slotPoint.localPosition, 1f);
     }
     public void AddItem(ItemView itemView, Transform slotPoint, Transform parent)
     {
@@ -113,6 +120,10 @@ public class UnitView : MonoBehaviour
         UnitAnimation.ChangeState(newState);
     }
     #endregion
+    public void Disposed()
+    {
+        unitController.Disposed();
+    }
 }
 public enum AnimationType
 {

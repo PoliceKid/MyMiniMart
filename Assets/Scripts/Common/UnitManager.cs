@@ -19,15 +19,13 @@ public class UnitManager : MonoBehaviour
         if (Instance == null)
             Instance = this;
         hasInit = true;
-        RegisterEvent();
     }
-
     public void AddUnit(UnitView unitView)
     {
         if (unitView == null) return;
         if (!unitViews.Contains(unitView))
         {
-            unitViews.Add(unitView);
+            unitViews.Add(unitView);        
             UnitConfig unitConfig = unitView.unitController.unitConfig;
             if (unitConfig.FollowRoutine)
             {
@@ -35,16 +33,15 @@ public class UnitManager : MonoBehaviour
             }
         }
     }
-    public void RegisterEvent()
+    public void RemoveUnit(UnitView unitView)
     {
-        CashierDeskController.OnUnitFinishRoutine += HandleUnitFinishRoutine;
+        if (unitViews.Contains(unitView))
+        {
+            unitViews.Remove(unitView);
+            unitView.Disposed();
+            SpawnerManager.DespawnUnit(unitView);
+        }
     }
-
-    private void HandleUnitFinishRoutine(UnitController unit)
-    {
-        unit.FinishRoutine(GetExitPoint().position);
-    }
-
     private void Update()
     {
         Tick();
@@ -53,11 +50,19 @@ public class UnitManager : MonoBehaviour
     public void Tick()
     {
         if (!hasInit) return;
+        List<UnitView> unitsToRemove = new List<UnitView>();
         foreach (var unit in unitViews)
         {
-            if (unit.unitController.unitData.IsPlayer) continue;
-            //if (!unit.unitController.unitData.IsState(UnitState.Actioning)) continue;
+            if (unit.unitController.unitData.IsCanExited)
+            {
+                unitsToRemove.Add(unit);
+            }
+            else
             unit.Tick(Time.deltaTime);
+        }
+        foreach (var unitToRemove in unitsToRemove)
+        {
+            RemoveUnit(unitToRemove);
         }
     }
 
@@ -69,5 +74,9 @@ public class UnitManager : MonoBehaviour
     {
         int randomIndex = UnityEngine.Random.Range(0, ExitPoints.Count);
         return ExitPoints[randomIndex];
+    }
+    public void Disposed()
+    {
+
     }
 }
