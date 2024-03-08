@@ -1165,6 +1165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6730253451555939595}
   - component: {fileID: 830497483202985841}
+  - component: {fileID: 731306933269210690}
   m_Layer: 0
   m_Name: _Worker_ShelfB
   m_TagString: Untagged
@@ -1209,6 +1210,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &731306933269210690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6209753015619354545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9369cf2fdbe6b64e9074c01597167de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hatSlotTransform: {fileID: 0}
 --- !u!1 &6236576091432263152
 GameObject:
   m_ObjectHideFlags: 0

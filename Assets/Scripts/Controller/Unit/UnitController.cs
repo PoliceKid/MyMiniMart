@@ -368,13 +368,16 @@ public class UnitController : IOccupier
         if (CheckDestinationReached())
         {
             unitView.ChangeState("Idle_Happy_Carry");
-            if (unitData.IsCompleteRoutine)
+            TimerHelper.instance.StartTimer(0.3f, () =>
             {
-                unitData.SetState(UnitState.None);
-                unitData.SetExited(true);
-                return;
-            }
-            unitData.SetState(UnitState.Actioning);
+                if (unitData.IsCompleteRoutine)
+                {
+                    unitData.SetState(UnitState.None);
+                    unitData.SetExited(true);
+                    return;
+                }
+                unitData.SetState(UnitState.Actioning);
+            });            
         }
     }
     public virtual void HandleWaiting()

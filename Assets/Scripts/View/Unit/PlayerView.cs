@@ -6,8 +6,6 @@ public class PlayerView : UnitView
 {
 
     private bool hasInit;
-    private float capsuleHeight = 0.05f;
-    private float capsuleRadius = 0.01f;
     [SerializeField] LayerMask BuildingModelLayerMask;
     public override void Init(UnitController unitController, Vector3 startingPosition)
     {
@@ -48,24 +46,55 @@ public class PlayerView : UnitView
         }
         return true;
     }
+    private BuildingView targetBuildingAction;
     private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("trigger unit");
+    {      
         BuildingView targetBuildingView = other.GetComponent<BuildingView>();
         if (targetBuildingView != null)
         {
+            
             targetBuildingView?.OnPlayerInteract(1.2f);
-            SlotContainer nearestActionPoint = targetBuildingView.FindNearestActionPoint(transform.position);
-            if(nearestActionPoint != null)
+            TimerHelper.instance.StartTimer(0.3f, () =>
             {
+                targetBuildingAction = targetBuildingView;
+            });
+          
+        }
+    }
+    private string lastActionType;
+    private Vector3 lastPlayerPosition;
+    private void OnTriggerStay(Collider other)
+    {
+        if(targetBuildingAction != null)
+        {
+            //TimerHelper.instance.StartTimer(1f, HandleAction);
+            HandleAction();
+        }
+
+    }
+
+    private void HandleAction()
+    {
+        Vector3 currentPlayerPosition = transform.position;
+
+        // Ki?m tra n?u v? trí hi?n t?i c?a ng??i ch?i khác v?i v? trí tr??c ?ó
+        if (currentPlayerPosition != lastPlayerPosition)
+        {
+            lastPlayerPosition = currentPlayerPosition;
+            PointTriggerAction nearestActionPoint = targetBuildingAction.FindNearestActionPointOndistance(transform.position, lastActionType);
+            if (nearestActionPoint != null)
+            {
+
                 ActionType type = GameHelper.ConvertStringToEnum(nearestActionPoint.CodeName);
                 switch (type)
                 {
                     case ActionType.Input:
-                        AddItemToBuilding(targetBuildingView);
+                        AddItemToBuilding(targetBuildingAction);
+                        lastActionType = ActionType.Input.ToString();
                         break;
                     case ActionType.Output:
-                        GetItemFromBuilding(targetBuildingView);
+                        GetItemFromBuilding(targetBuildingAction);
+                        lastActionType = ActionType.Output.ToString();
                         break;
                     case ActionType.Thief:
                         break;
@@ -74,12 +103,16 @@ public class PlayerView : UnitView
                     default:
                         break;
                 }
+
             }
+
         }
     }
+
     private void OnTriggerExit(Collider other)
-    {
-        BuildingView targetBuildingView = other.GetComponent<BuildingView>();
-        targetBuildingView?.OnPlayerInteract(1);
+    {       
+        targetBuildingAction?.OnPlayerInteract(1);
+        targetBuildingAction = null;
+        lastActionType = "";
     }
 }

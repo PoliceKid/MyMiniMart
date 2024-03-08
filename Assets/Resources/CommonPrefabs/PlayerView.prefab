@@ -50,9 +50,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holdContainer: {fileID: 7456210356912151763}
-  holdSize: {x: 1, y: 2}
-  holdContainerHigh: 2
+  holdSize: {x: 1, y: 1}
+  holdContainerHigh: 4
   VisualContainer: {fileID: 8257335693520214345}
+  BuildingModelLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &2524764332106977961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32eddcef97caaba4783442519e20ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystick: {fileID: 0}
+  floatingJoystick: {fileID: 0}
   Speed: 0
 --- !u!54 &-817002384064755130
 Rigidbody:

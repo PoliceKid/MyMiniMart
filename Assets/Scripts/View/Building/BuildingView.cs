@@ -24,6 +24,8 @@ public class BuildingView : MonoBehaviour
     public List<SlotContainer> OutputItemSlots = new List<SlotContainer>();
     [SerializeField]
     public List<SlotContainer> ActionSlots = new List<SlotContainer>();
+
+    private List<PointTriggerAction> ActionTriggerPoints = new List<PointTriggerAction>();
     #endregion
 
     protected GameObject model;
@@ -54,6 +56,8 @@ public class BuildingView : MonoBehaviour
         foreach (SlotContainer slotContainer in InputItemSlots)
         {
             slotContainer.Init();
+            PointTriggerAction inputPointTrigger = new PointTriggerAction(ItemSlotType.Input.ToString(), slotContainer.ContainerPoint);
+            ActionTriggerPoints.Add(inputPointTrigger);
             foreach (Transform item in slotContainer.SlotsContainer)
             {
                 item.transform.parent = this.transform;
@@ -63,6 +67,8 @@ public class BuildingView : MonoBehaviour
         foreach (SlotContainer slotContainer in OutputItemSlots)
         {
             slotContainer.Init();
+            PointTriggerAction outputPointTrigger = new PointTriggerAction(ItemSlotType.Output.ToString(), slotContainer.ContainerPoint);
+            ActionTriggerPoints.Add(outputPointTrigger);
             foreach (Transform item in slotContainer.SlotsContainer)
             {
                 item.transform.parent = this.transform;
@@ -71,7 +77,6 @@ public class BuildingView : MonoBehaviour
         }
         foreach (SlotContainer slotContainer in ActionSlots)
         {
-            slotContainer.Init();
             foreach (Transform item in slotContainer.SlotsContainer)
             {
                 item.transform.parent = this.transform;
@@ -129,11 +134,17 @@ public class BuildingView : MonoBehaviour
         target.DOLocalMove(slotPoint.localPosition, 0.5f);
     }
 
-    public SlotContainer FindNearestActionPoint(Vector3 playerPosition)
-    {    
-        SlotContainer nearestActionPoint = ActionSlots
-            .OrderBy(ap => Vector3.Distance(playerPosition, ap.ContainerPoint.position))
+    public PointTriggerAction FindNearestActionPoint(Vector3 playerPosition, string ActionType = null)
+    {
+        PointTriggerAction nearestActionPoint = ActionTriggerPoints.Where(x => x.Point != null && x.CodeName != ActionType)
+            .OrderBy(ap => Vector3.Distance(playerPosition, ap.Point.position))
             .FirstOrDefault();
+        return nearestActionPoint;
+    }
+    public PointTriggerAction FindNearestActionPointOndistance(Vector3 playerPosition, string ActionType = null)
+    {
+        PointTriggerAction nearestActionPoint = ActionTriggerPoints.Where(x => x.Point != null && x.CodeName != ActionType)
+            .FirstOrDefault(ap => Vector3.Distance(playerPosition, ap.Point.position) <=7f);
         return nearestActionPoint;
     }
     public void OnPlayerInteract(float scaleValue)
@@ -151,6 +162,7 @@ public class SlotContainer
     public Transform ContainerPoint { get; private set; }
     public void Init()
     {
+        if (SlotsContainer.Count == 0) return;
         ContainerPoint = SlotsContainer[0];
     }
     public void Init(int high)
@@ -169,6 +181,20 @@ public class SlotContainer
             });
         }
        
+    }
+}
+[SerializeField]
+public class PointTriggerAction
+{
+ 
+
+    public string CodeName { get; private set; }
+    public Transform Point { get; private set; }
+
+    public PointTriggerAction(string codeName, Transform point)
+    {
+        CodeName = codeName;
+        Point = point;
     }
 }
 
