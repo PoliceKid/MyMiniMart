@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
 public class CustomerController :UnitController
 {
     private int currentIndex;
@@ -27,27 +27,11 @@ public class CustomerController :UnitController
     }
     public override bool SetTargetBuilding(ActionType type, BuildingController buildingController)
     {
-        //if(unitData.LastJoinBuilding != null)
-        //{
-        //   unitData.LastJoinBuilding.BuildingData.OnUpdateQueueSlot -= HandleBuildingUpdateQueueSlot;
-        //}
         bool setBuildingSuccess =  base.SetTargetBuilding(type, buildingController); 
         if (setBuildingSuccess)
         {
             buildingController.BuildingData.OnUpdateItem += HandleTargetBuildingUpdateData;
-            //CommandData nextRoutineCommand = GetNextRoutineCommand(currentIndex + 1);
-            // if (!unitData.IsCompleteRoutine)
-            // {
-            //    BuildingController nextTargetBuilding = GetTargetBuilding(nextRoutineCommand);
-            //    if (nextTargetBuilding != null)
-            //    {
-            //        nextTargetBuilding.BuildingData.OnUpdateQueueSlot += HandleBuildingUpdateQueueSlot;
-            //    }
-            // }
-            //else
-            //{
-            //    Debug.LogWarning("Unit has completed routine");
-            //}
+             
         }
        
         return setBuildingSuccess;
@@ -58,25 +42,32 @@ public class CustomerController :UnitController
         if (lastJoinBuilding != null)
         {
             lastJoinBuilding.BuildingData.OnUpdateItem -= HandleTargetBuildingUpdateData;
-            
         }
-
+      
     }
-    //private void HandleBuildingUpdateQueueSlot(string obj)
-    //{
-    //    if (unitData.IsState(UnitState.Commanding)) return;
-    //    if (!IsCompleteCommand(GetActiveRoutineCommand())) return;
-    //    HandleCommanding();
-    //}
+    public override void HandleDestinationing()
+    {
+        if (CheckDestinationReached())
+        {
+            if (unitData.IsCompleteRoutine)
+            {
+                unitData.SetState(UnitState.None);
+                unitData.SetExited(true);
+                return;
+            }
+        }
+        base.HandleDestinationing();
+        
+    }
     private void HandleTargetBuildingUpdateData(string buildingCodeName)
     {
         if (unitData.IsState(UnitState.Actioning)) return;
         if (unitData.IsState(UnitState.Destinationing)) return;
         if (IsCompleteCommand(GetActiveRoutineCommand())) return;
+        //if (buildingCodeName.Contains("Cashier")) return;
         if (GameHelper.GetStringSplitSpaceRemoveLast(unitData.ActiveRoutineCommandData.CodeName) == buildingCodeName)
         {
-            unitData.SetState(UnitState.Actioning); 
-            //HandleActioning();
+             unitData.SetState(UnitState.Actioning);    
         }
     }
     public override CommandData GetNextCommand()
@@ -107,9 +98,9 @@ public class CustomerController :UnitController
     }
     public override bool CheckCanCompleteCommand(CommandData commandData)
     {
-        if (IsCompleteCashierDeskCommand(commandData)) return true;
+        if (IsCompleteCashierDeskCommand(commandData) ) return true;
+        
         BuildingController targetBuilding = GetTargetBuilding(commandData);
-
         if (targetBuilding == null) return false;
         var ItemOutputs = targetBuilding.GetItemSlots(ItemSlotType.Output);// L?y ???c ra list item config Input, 
         RoutineConfig currentRoutineConfig = unitConfig.GetRoutineConfig(commandData.CodeName);
@@ -120,6 +111,7 @@ public class CustomerController :UnitController
             foreach (var item in ItemOutputs.Keys)
             {
                 int itemCount = unitData.GetItemCount(item);
+                if (itemCount == 0) return false;
                 if (itemCount >= currentRoutineConfig.Quantity)
                 {
                     return true;
@@ -129,7 +121,36 @@ public class CustomerController :UnitController
         }
         return false;
     }
-    public static void ActioningWithCashierDesk(CustomerController customerController ,QueueSlotDataModel queueSlotFree)
+    public override bool AddItemToBuilding(BuildingController buildingController)
+    {
+        if (!buildingController.CheckUnitCanProcessItem(unitData.Id)) return false;
+        List<ItemSlotDataModel> GetlistSlotItemCarryOccupied = unitData.GetlistSlotItemCarryOccupied;
+        if (GetlistSlotItemCarryOccupied.Count == 0) return false;
+        float timerCount = 0;
+        foreach (var slotItem in GetlistSlotItemCarryOccupied)
+        {
+            timerCount += 0.5f;
+            ItemController item = slotItem.OccupierItem;
+            if (!buildingController.CheckFreeSlotToAddItem(ItemSlotType.Input, item.itemData.CodeName)) continue;
+            buildingController.AddItemToSlot(ItemSlotType.Input, item, out ItemSlotDataModel slotAddItem,false);
+            TimerHelper.instance.StartTimer(timerCount, () =>
+            {               
+                if (slotAddItem != null)
+                {
+                    unitData.RemoveItemAwaySlotCarry(item);
+                    unitView.AddItem(item.itemView, slotAddItem.Slotpoint, buildingController.BuildingView.transform);            
+                }
+                
+            });
+        }
+        TimerHelper.instance.StartTimer(timerCount +0.5f, () =>
+        {
+            buildingController.HandleCashierDeskProcessing();
+
+        });       
+        return false;
+    }
+    public static void GotoCustomerSlot(CustomerController customerController ,QueueSlotDataModel queueSlotFree)
     {
         if (queueSlotFree == null) return;
         customerController.unitView.SetTargetMovePosition(queueSlotFree.Slotpoint.position, customerController.GetAnimationType());
@@ -140,7 +161,8 @@ public class CustomerController :UnitController
         if (!commandData.CodeName.Contains("Cashier")) return false;
         BuildingController targetBuilding = GetTargetBuilding(commandData);
         if (targetBuilding == null) return false;
-        return targetBuilding.CheckUnitCanProcessItem(this.unitData.Id);
+        bool unitCanProcess = targetBuilding.CheckUnitCanProcessItem(this.unitData.Id) && unitData.GetTotalCountItem() ==0;
+        return unitCanProcess;
     }
     public override void FinishRoutine(Vector3 exitPoint)
     {

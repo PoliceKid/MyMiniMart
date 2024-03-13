@@ -8,7 +8,6 @@ public class BuildingManager : MonoBehaviour
     public static BuildingManager Instance { get; private set; }
     private bool hasInit;
     public List<BuildingView> buildingViews = new List<BuildingView>();
-    List<BuildingView> shelfBuildings = new List<BuildingView>();
        
     #region INIT METHOD
     public void Init()
@@ -33,19 +32,9 @@ public class BuildingManager : MonoBehaviour
                 if (!buildingView.IsLocked && buildingView.building.BuildingConfig != null)
                 {
                     buildingViews.Add(buildingView);
-                }
-               
-                if (buildingView.building.CheckBuildingType(BuildingType.Shelf))
-                {
-                    shelfBuildings.Add(buildingView);
-                }
+                }                          
             }
 
-        }
-
-        foreach (var buildingView in shelfBuildings)
-        {
-            AddMatBuildingForShelfBuilding(buildingView);
         }
     }
     public List<CommandData> GetListSupportCommandBuilding(string commandKey)
@@ -55,13 +44,13 @@ public class BuildingManager : MonoBehaviour
         BuildingView buildingView = GetBuildingView(GameHelper.GetStringSplitSpaceRemoveLast(commandKey));
         if(buildingView == null) return null;
        
-        var ItemInputConfigs = buildingView.building.BuildingConfig.GetListItemConfig(ItemSlotType.Input.ToString());// Lấy được ra list item config Input, 
+        var ItemInputConfigs = buildingView.building.GetItemSlots(ItemSlotType.Input);
         if (ItemInputConfigs != null)
         {
-            foreach (var itemConfig in ItemInputConfigs)
+            foreach (var itemConfig in ItemInputConfigs.Keys)
             {
 
-                var listBuildingWithItems = GetBuildingWithItem(ItemSlotType.Output, itemConfig.CodeName);
+                var listBuildingWithItems = GetBuildingWithItem(ItemSlotType.Output, itemConfig);
                 if (listBuildingWithItems != null)
                 {
                     foreach (var bView in listBuildingWithItems)
@@ -76,29 +65,7 @@ public class BuildingManager : MonoBehaviour
         }
         return null;
     }
-    private void AddMatBuildingForShelfBuilding(BuildingView buildingView)
-    {
-        string commandKey = buildingView.CodeName + "_" + ItemSlotType.Input.ToString();
-        var ItemInputConfigs = buildingView.building.BuildingConfig.GetListItemConfig(ItemSlotType.Input.ToString());// Lấy được ra list item config Input, 
-        if (ItemInputConfigs != null)
-        {
-            foreach (var itemConfig in ItemInputConfigs)
-            {
-
-                var listBuildingWithItems = GetBuildingWithItem(ItemSlotType.Output, itemConfig.CodeName);
-                if (listBuildingWithItems != null)
-                {
-                    foreach (var bView in listBuildingWithItems)
-                    {
-                        if (bView.building.CheckBuildingType(BuildingType.Shelf)) continue;
-                        CommandData commandData = new CommandData(bView.CodeName + "_" + ItemSlotType.Output);
-                        ShevlerController.AddCommandShelfBuilding(commandKey, commandData);
-                    }
-                }
-            }
-        }
-    }
-
+    
     private void InitBuilding(BuildingView buildingView)
     {
         if(buildingView == null|| buildingView.IsLocked) return;
@@ -159,11 +126,6 @@ public class BuildingManager : MonoBehaviour
     #endregion
     #region BUILDING API 
 
-    public BuildingView GetShelfBuildingPriorityShelver()
-    {
-        shelfBuildings = shelfBuildings.OrderBy(x => x.building.BuildingData.GetTotalCountItem(ItemSlotType.Input)).ToList();
-        return shelfBuildings.FirstOrDefault();
-    }
   
     public BuildingView GetBuildingView(string codeName)
     {

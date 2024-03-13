@@ -21,11 +21,9 @@ public class BuildingController
     }
     private void LoadConfig(string codeName)
     {
-        BuildingConfig = ConfigManager.Instance.GetBuildingConfig(codeName);        
-        itemOuputConfigs = BuildingConfig.GetListItemConfig(ItemSlotType.Output.ToString());
+        BuildingConfig = ConfigManager.Instance.GetBuildingConfig(codeName);
         
     }
-    List<ItemConfig> itemOuputConfigs;
     #endregion
     #region ITEM FUNCTION
 
@@ -37,7 +35,7 @@ public class BuildingController
     {
        return BuildingData.GetListOccupiedSlotItems(type, codeName);
     }
-    public void AddItemToSlot(ItemSlotType type, ItemController item, out ItemSlotDataModel slotAdditem)
+    public void AddItemToSlot(ItemSlotType type, ItemController item, out ItemSlotDataModel slotAdditem, bool canCallView = true)
     {
 
         slotAdditem = null;
@@ -46,7 +44,8 @@ public class BuildingController
         if (freeSlotAddItem == null) return;
         slotAdditem = freeSlotAddItem;
         // Call View
-        BuildingView.GetItem(item.itemView, freeSlotAddItem.Slotpoint);
+        if (canCallView)
+            BuildingView.GetItemToInput(item.itemView, freeSlotAddItem.Slotpoint);
     }
     public void RemoveItemAwaySlot(ItemSlotType type, string Id,out ItemController itemRemoveOut)
     {
@@ -56,21 +55,15 @@ public class BuildingController
         if(itemRemove == null) return;
         itemRemoveOut = itemRemove;
         //Call View
-        BuildingView.RemoveItem(itemRemove.itemView);
-      
+
     }
     #endregion
-    #region ACTION FUNCTION
+    #region PROCESS FUNCTION
 
     public virtual void Processing()
     {
         switch(BuildingData.Type)
-        {
-            case BuildingType.Cashier:
-                HandleFarmProcessing();
-                break;
-            case BuildingType.Shelf:
-                break;
+        {          
             case BuildingType.Farm:
                 HandleFarmProcessing();
                 break;
@@ -85,7 +78,7 @@ public class BuildingController
     }
     public virtual void HandleFarmProcessing()
     {
-        if (!CheckAvaliableSlotForProcessing()) return;
+        if (!CheckAvaliableSlotItemForProcessing()) return;
         if (!CheckCanProcessItem(ItemSlotType.Input, out var slotAvaliableProcess))
             return;
         {
@@ -100,29 +93,34 @@ public class BuildingController
                         RemoveItemAwaySlot(ItemSlotType.Input, slotItem.OccupierItem.itemData.Id, out ItemController ItemRemove);
                         if (ItemRemove != null)
                         {
-                            BuildingView.RemoveItem(ItemSlotType.Input, item);
+                            BuildingView.MoveItemToModelProcess(item);
                         }
 
                     }
-                    ItemConfig outputItemConfigs = itemOuputConfigs.First();
+                    var outputItemConfigs = GetItemSlots(ItemSlotType.Output).Keys;
+                   
                     if (outputItemConfigs != null)
                     {
-                        if (CheckFreeSlotToAddItem(ItemSlotType.Output, outputItemConfigs.CodeName))
+                        foreach (var outputItemConfig in outputItemConfigs)
                         {
-                            //Create item
-                            var itemView = SpawnerManager.CreateItemView(outputItemConfigs.CodeName, Vector3.zero, BuildingView.transform);
-                            if (itemView != null)
+                            if (CheckFreeSlotToAddItem(ItemSlotType.Output, outputItemConfig))
                             {
-                                AddItemToSlot(ItemSlotType.Output, itemView.ItemController, out ItemSlotDataModel slotAddItem);
+                                //Create item
+                                var itemView = SpawnerManager.CreateItemView(outputItemConfig, Vector3.zero, BuildingView.transform);
+                                if (itemView != null)
+                                {
+                                    AddItemToSlot(ItemSlotType.Output, itemView.ItemController, out ItemSlotDataModel slotAddItem);
 
-                                //Call View
-                                if (slotAddItem != null)
-                                    BuildingView.AddItem(ItemSlotType.Output, itemView, slotAddItem);
+                                    //Call View
+                                    if (slotAddItem != null)
+                                        BuildingView.AddItemToOutput(itemView, slotAddItem);
+
+                                }
+
 
                             }
-
-
                         }
+                        
 
                     }
 
@@ -132,27 +130,29 @@ public class BuildingController
     }
     public virtual void HandleFarmAutoProcessing()
     {
-        if (itemOuputConfigs == null) return;
-        foreach (var itemConfig in itemOuputConfigs)
+        var outputItemConfigs = GetItemSlots(ItemSlotType.Output).Keys;
+        if (outputItemConfigs == null) return;
+        foreach (var itemConfig in outputItemConfigs)
         {
-            for (int i = 0; i < itemConfig.AmoutProcess; i++)
+            
+            if (CheckFreeSlotToAddItem(ItemSlotType.Output, itemConfig))
             {
-                if (CheckFreeSlotToAddItem(ItemSlotType.Output, itemConfig.CodeName))
+                //Create item
+                var itemView = SpawnerManager.CreateItemView(itemConfig, Vector3.zero, BuildingView.transform);
+                if (itemView != null)
                 {
-                    //Create item
-                    var itemView = SpawnerManager.CreateItemView(itemConfig.CodeName, Vector3.zero, BuildingView.transform);
-                    if (itemView != null)
+                    AddItemToSlot(ItemSlotType.Output, itemView.ItemController, out ItemSlotDataModel slotAddItem);
+                    if (slotAddItem != null)
                     {
-                        AddItemToSlot(ItemSlotType.Output, itemView.ItemController, out ItemSlotDataModel slotAddItem);
-                        if (slotAddItem != null)
-                        {
-                            BuildingView.AddItem(ItemSlotType.Output, itemView, slotAddItem);
-                        }
+                        BuildingView.AddItemToOutput( itemView, slotAddItem);
                     }
                 }
             }
+         
         }
     }
+    #endregion
+    #region UNIT API FUNCTION
     public virtual QueueSlotDataModel AddUnitToQueueSlot(ActionType type, UnitController unit)
     {
         //Call API
@@ -166,13 +166,11 @@ public class BuildingController
     {
         return BuildingData.RemoveUnitAwayQueueSlot(type, Id);
     }
-    public virtual UnitController GetNextUnitProcess(ActionType type)
-    {
-        if (BuildingData.GetTotalUnitJoinQueue(ActionType.Input) == 0) return null;
-        return BuildingData.GetListUnitJoinQueue(ActionType.Input).First();
-    }
+    #endregion
+    #region CHECK ACTION FUNCTION
     public bool CheckCanJoinQueueSlot(ActionType actionType) => BuildingData.CheckCanJoinQueueSlot(actionType);
     #endregion
+
     #region CHECKING SLOT ITEM FUNCTION
     public bool CheckFreeSlotToAddItem(ItemSlotType type)
     {
@@ -206,10 +204,11 @@ public class BuildingController
         {
             var slotItemOccupied = BuildingData.GetListOccupiedSlotItems(listiItemSlots.Value);
             int countAmoutProcess =0;
+            int amountProcessCpnfig = BuildingConfig.GetItemConfig(type.ToString(), listiItemSlots.Key).AmoutProcess;
             foreach (var item in slotItemOccupied)
             {
             
-                if (countAmoutProcess >= BuildingConfig.GetItemConfig(type.ToString(), listiItemSlots.Key).AmoutProcess)
+                if (countAmoutProcess >= amountProcessCpnfig)
                 {
                     break;
                 }
@@ -224,7 +223,7 @@ public class BuildingController
                 }
                 countAmoutProcess++;
             }
-            if (countAmoutProcess >= BuildingConfig.GetItemConfig(type.ToString(), listiItemSlots.Key).AmoutProcess)
+            if (countAmoutProcess >= amountProcessCpnfig)
             {
                 canProcess = true;             
             }
@@ -238,14 +237,10 @@ public class BuildingController
         slotAvaliableForProcess = slotAvaliableForProcessTemp;
         return canProcess;
     }
-    public bool CheckAvaliableSlotForProcessing()
+    public bool CheckAvaliableSlotItemForProcessing()
     {
         if (CheckBuildingType(BuildingType.FarmAutoProcess)) return CheckFreeSlotToAddItem(ItemSlotType.Output);
         return CheckContaintItemSlot(ItemSlotType.Input) && CheckFreeSlotToAddItem(ItemSlotType.Output);
-    }
-    public Dictionary<string, List<ItemSlotDataModel>> GetAvailableSlotsForProcess(ItemSlotType type)
-    {
-      return BuildingData.GetAvailableSlotsForProcess(type);
     }
 
     #endregion

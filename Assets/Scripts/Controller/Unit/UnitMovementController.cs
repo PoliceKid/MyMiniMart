@@ -21,7 +21,6 @@ public class UnitMovementController : MonoBehaviour, IMovement
         return false;
         
     }
-    bool queueColliderReached = false;
     public void Init()
     {
         agent = GetComponent<NavMeshAgent>();

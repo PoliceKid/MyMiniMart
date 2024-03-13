@@ -34,6 +34,7 @@ public class UnitView : MonoBehaviour
         UnitAnimation.Init(VisualContainer,"Idle_Happy");
         // Init Item slot carry
         InitListItemsCarryPos();
+       
     }
     public void LoadModel(string codeName,string hatCodeName)
     {
@@ -76,22 +77,48 @@ public class UnitView : MonoBehaviour
     } 
     public void GetItemFromBuilding(BuildingView buildingView)
     {
-        unitController.GetItemFromBuilding( buildingView.building);
+        unitController.GetAllItemFromBuilding( buildingView.building);
     }
-    public void GetItem(ItemView itemView,Transform slotPoint)
+    public virtual void GetItem(ItemView itemView,Transform slotPoint ,Action OnGetItem = null)
     {
         if (itemView == null) return;
-
         itemView.transform.parent = transform;
         Transform target = itemView.transform;
-        target.DOLocalMove(slotPoint.localPosition, 1f);
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(target.DOLocalMove(slotPoint.localPosition, 1f).OnComplete( () => {
+            OnGetItem?.Invoke();
+        }));
     }
-    public void AddItem(ItemView itemView, Transform slotPoint, Transform parent)
+    public void GetItem(ItemView itemView, Action OnGetItem = null)
+    {
+        if (itemView == null) return;
+        itemView.transform.parent = transform;
+        Transform target = itemView.transform;
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(target.DOLocalMove(VisualContainer.localPosition + Vector3.up*2,0.2f).OnComplete(() => {
+            OnGetItem?.Invoke();
+        }));
+    }
+    public virtual void AddItem(ItemView itemView, Transform slotPoint, Transform parent)
     {
         if (itemView == null) return;
         itemView.transform.parent = parent;
         Transform target = itemView.transform;
-        target.DOLocalMove(slotPoint.localPosition, 0.5f);
+        UnitType type = unitController.unitData.UnitType;
+        Sequence sequence = DOTween.Sequence();
+        switch (type)
+        {
+            case UnitType.Player:
+                sequence.Append(target.DOLocalMove(slotPoint.localPosition, 0.5f));
+                break;
+            case UnitType.Worker:
+                sequence.Append(target.DOLocalMove(slotPoint.localPosition, 0.5f));
+                break;
+            case UnitType.Customer:
+                sequence.Append(target.DOLocalJump(slotPoint.localPosition,0.02f,1, 1f));
+                break;
+        }
+
     }
     #endregion
     #region SORT ITEM

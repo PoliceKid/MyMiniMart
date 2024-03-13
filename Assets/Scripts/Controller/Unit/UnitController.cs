@@ -6,7 +6,7 @@ using System;
 
 public class UnitController : IOccupier
 {
-    protected UnitView unitView;
+    public UnitView unitView;
     public UnitDataModel unitData { get; private set; }
     public UnitConfig unitConfig { get; private set; }
 
@@ -78,11 +78,11 @@ public class UnitController : IOccupier
         };
         unitData.AddItemSlotCarry(slotCarry);
     }
-    private bool CheckCanAddItemToSlotCarry()
+    public bool CheckCanAddItemToSlotCarry()
     {
         return unitData.CheckCanAddItemToSlotCarry();
     }
-    public int GetItemFromBuilding(string ItemCodeName,BuildingController buildingController, int quantity =0)
+    public virtual int GetItemFromBuilding(string ItemCodeName,BuildingController buildingController, int quantity =0)
     {
         int itemCount = 0;
         // first Get item in routine for getting
@@ -99,7 +99,7 @@ public class UnitController : IOccupier
             buildingController.RemoveItemAwaySlot(ItemSlotType.Output, item.OccupierItem.itemData.Id, out ItemController itemRemove);
             if(itemRemove != null)
             {              
-                AddItemToSlotCarry(itemRemove);        
+                AddItemToSlotCarry(itemRemove,0);        
                 itemCount++;                         
             }
           
@@ -107,7 +107,7 @@ public class UnitController : IOccupier
         return itemCount;
     }
    
-    public void GetItemFromBuilding( BuildingController buildingController, int quantity =0)
+    public virtual void GetAllItemFromBuilding( BuildingController buildingController, int quantity =0)
     {
         int itemCount = 0;
         foreach (var item in buildingController.GetItemSlots(ItemSlotType.Output).Keys)
@@ -131,7 +131,8 @@ public class UnitController : IOccupier
         {
             ItemController item = slotItem.OccupierItem;
             if (!buildingController.CheckFreeSlotToAddItem(ItemSlotType.Input, item.itemData.CodeName)) continue;
-            buildingController.AddItemToSlot(ItemSlotType.Input, item,out ItemSlotDataModel slotAddItem);
+
+            buildingController.AddItemToSlot(ItemSlotType.Input, item,out ItemSlotDataModel slotAddItem, false);
             if(slotAddItem != null)
             {
                 unitView.AddItem(item.itemView, slotAddItem.Slotpoint, buildingController.BuildingView.transform);
@@ -142,11 +143,20 @@ public class UnitController : IOccupier
         return false;
     }
 
-    public void AddItemToSlotCarry(ItemController item)
+    public virtual void AddItemToSlotCarry(ItemController item, float delayTime)
     {
         ItemSlotDataModel freeSlotForItem = unitData.AddItemToSlotCarry(item);
         if (freeSlotForItem != null)
-            unitView.GetItem(item.itemView, freeSlotForItem.Slotpoint);
+            TimerHelper.instance.StartTimer(delayTime, () =>
+             {
+                 unitView.GetItem(item.itemView, freeSlotForItem.Slotpoint);
+             }
+             );
+            
+    }
+    public virtual void RemoveItemFromSlotCarry(ItemController item)
+    {
+        unitData.RemoveItemAwaySlotCarry(item);
     }
     #endregion
     #region ACTION FUNCTION
@@ -192,7 +202,7 @@ public class UnitController : IOccupier
         CommandData activeCommandTemp = GetActiveRoutineCommand();
         // If Compelete list support command -> move to active routine command
         // If Compelete Routine command -> Next routine command -> Next support command
-        if (activeCommandTemp.IsComplete)
+        if (IsCompleteCommand(activeCommandTemp))
         {
             //Complete Active routine command and all support Command before next Routine command 
             GetActiveRoutineCommand().CompleteCommand(false);
@@ -207,14 +217,10 @@ public class UnitController : IOccupier
         {
             if (unitData.IsCompleteSupportCommand(activeCommandTemp) || unitData.IsFullItemCarry)
             {
-                //GetActiveRoutineCommand().CompleteCommand(true);
                 nextCommand = activeCommandTemp;
-                //Complete Active routine command
-               
             }
             else
-            {
-                // If not complete Support command
+            {              
                 nextCommand = NextSupportCommand(activeCommandTemp);                       
             }
         }
@@ -299,9 +305,8 @@ public class UnitController : IOccupier
     }
     public virtual CommandData NextRoutineCommand(int index =-1)
     {
-        // get next Routine command
-        CommandData nextRoutineCommand = null;
-        nextRoutineCommand = GetNextRoutineCommand(index);
+        // get next Routine command       
+        CommandData nextRoutineCommand = GetNextRoutineCommand(index);
         if (nextRoutineCommand == null) return null;
         // Set active routine command  = next routine command
         unitData.SetActiveRoutineCommandData(nextRoutineCommand);
@@ -350,6 +355,7 @@ public class UnitController : IOccupier
             case UnitState.Queueing:
                 break;
             case UnitState.Waiting:
+                HandleWaiting();
                 break;
             case UnitState.Actioning:
                 // Test only come to next action
@@ -367,17 +373,13 @@ public class UnitController : IOccupier
     {
         if (CheckDestinationReached())
         {
-            unitView.ChangeState("Idle_Happy_Carry");
+            unitData.SetState(UnitState.Waiting);
             TimerHelper.instance.StartTimer(0.3f, () =>
             {
-                if (unitData.IsCompleteRoutine)
-                {
-                    unitData.SetState(UnitState.None);
-                    unitData.SetExited(true);
-                    return;
-                }
+               
                 unitData.SetState(UnitState.Actioning);
-            });            
+            });
+          
         }
     }
     public virtual void HandleWaiting()
@@ -400,7 +402,9 @@ public class UnitController : IOccupier
 
     public virtual void HandleActioning()
     {
+        if (!CheckDestinationReached()) return;
         CommandData activeCommand = GetMainActiveCommand();
+ 
         BuildingController targetBuilding = GetTargetBuilding(activeCommand);
         if (targetBuilding == null) return;
         if (!targetBuilding.CheckUnitCanProcessItem(unitData.Id))
@@ -408,19 +412,22 @@ public class UnitController : IOccupier
             unitData.SetState(UnitState.Waiting);
             return;
         }
-        AIProcessWithBuilding(activeCommand);
+        ProcessWithBuilding(activeCommand);
         if (IsCompleteCommand(activeCommand))
         {
 
             if (unitData.IsCompleteRoutine)
             {
-                FinishRoutine(UnitManager.Instance.GetExitPoint().position);
-                return;
+                if (unitData.IsCompleteRoutine)
+                {
+                    FinishRoutine(UnitManager.Instance.GetExitPoint().position);
+                    return;
+                }                   
             }
             unitData.SetState(UnitState.Commanding);
         }
         else
-        {
+        {           
             unitData.SetState(UnitState.Waiting);
         }
     }
@@ -433,7 +440,7 @@ public class UnitController : IOccupier
     {
          return unitData.IsEmptyItemCarry ? AnimationType.Run : AnimationType.Run_Carry;
     }
-    public virtual void AIProcessWithBuilding(CommandData activeCommand)
+    public virtual void ProcessWithBuilding(CommandData activeCommand)
     {
         ActionType type = GameHelper.ConvertStringToEnum(activeCommand.ActionType);
         BuildingController targetBuilding = GetTargetBuilding(activeCommand);
@@ -468,7 +475,7 @@ public class UnitController : IOccupier
     }
     public virtual void HandleGetItemFromBuilding(CommandData targetCommand ,BuildingController buildingController)
     {
-        GetItemFromBuilding(buildingController);
+        GetAllItemFromBuilding(buildingController);
     }
     public virtual void FinishRoutine(Vector3 exitPoint)
     {

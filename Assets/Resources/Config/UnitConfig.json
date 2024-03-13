@@ -90,6 +90,11 @@
         "FollowRoutine": true,
         "Routine":[
             {
+                "CodeName":"Shelf02_Tomato_Output",
+                "ItemCodeName":"veg_Tomato",
+                "Quantity":2
+            },
+            {
                 "CodeName":"Shelf03_Egg_Small_Output",
                 "ItemCodeName":"egg",
                 "Quantity":1
@@ -106,14 +111,14 @@
         "Routine":[
        
             {
-                "CodeName":"Shelf01_TomatoSauce_Output",
-                "ItemCodeName":"tomatoSauce",
+                "CodeName":"Shelf02_Tomato_Output",
+                "ItemCodeName":"veg_Tomato",
                 "Quantity":1
             },
             {
                 "CodeName":"Shelf03_Egg_Small_Output",
                 "ItemCodeName":"egg",
-                "Quantity":1
+                "Quantity":2
             },
             {
                 "CodeName":"CashierDesk_Input"
@@ -125,6 +130,11 @@
         "BaseMoveSpeed":10,
         "FollowRoutine": true,
         "Routine":[
+            {
+                "CodeName":"Shelf02_Tomato_Output",
+                "ItemCodeName":"veg_Tomato",
+                "Quantity":1
+            },
             {
                 "CodeName":"Shelf03_Egg_Small_Output",
                 "ItemCodeName":"egg",

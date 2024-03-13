@@ -197,19 +197,30 @@ public class UnitDataModel
         freeSlot.SetOccupier(item);
         return freeSlot;
     }
+    public ItemSlotDataModel RemoveItemAwaySlotCarry(ItemController item)
+    {
+        ItemSlotDataModel slotItem = GetSlotItemCarryWithItemId(item.itemData.Id);
+        slotItem?.ResetOccupier();
+        return slotItem;
+    }
     public ItemSlotDataModel GetFreeSlotCarry()
     {
         return ListSlotItemCarry.FirstOrDefault(x => !x.IsOccupied);
     }
     public List<ItemSlotDataModel> GetlistSlotItemCarryOccupied => ListSlotItemCarry.Where(x => x.IsOccupied).ToList();
 
-    public ItemSlotDataModel GetSlotCarryWithId(string Id)
+    public ItemSlotDataModel GetSlotItemCarryWithItemId(string Id)
     {
         return GetlistSlotItemCarryOccupied.FirstOrDefault(x => x.OccupierItem.itemData.Id == Id);
     }
     public int GetItemCount(string codeName)
     {
        return GetlistSlotItemCarryOccupied.Count(x => x.OccupierItem.itemData.CodeName == codeName);
+    }
+    public int GetTotalCountItem()
+    {
+        return GetlistSlotItemCarryOccupied.Count;
+
     }
     #endregion
     #region CHECKING FUNCTION

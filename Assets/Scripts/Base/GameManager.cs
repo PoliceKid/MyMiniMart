@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private UnitManager unitManager;
     private CameraManager cameraManager;
     private TimerHelper timerManager;
+    private ResourceManager resourceManager;
     #endregion
     private void Awake()
     {
@@ -41,6 +42,9 @@ public class GameManager : MonoBehaviour
         timerManager ??= FindObjectOfType<TimerHelper>();
         if (timerManager != null)
             timerManager.Init();
+        resourceManager ??= FindObjectOfType<ResourceManager>();
+        if (resourceManager != null)
+            resourceManager.Init();
     }
     void Start()
     {

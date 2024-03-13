@@ -160,6 +160,11 @@ public class SpawnerManager : MonoBehaviour
         if (unit == null) return;
         unit.gameObject.Despawn();
     }
+    public static void DespawnItem(ItemView item)
+    {
+        if (item == null) return;
+        item.gameObject.Despawn();
+    }
     public Transform GetSpawnPoint()
     {
         int randomIndex = Random.Range(0, SpawnPoints.Count);

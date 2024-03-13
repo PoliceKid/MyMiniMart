@@ -56,22 +56,22 @@ public class ShevlerController : UnitController
     public CommandData GetNextShelfBuilding()
     {
         // First get shelf building with minimum Item.
-        // Second Maybe priority shelf building that have item customer needed.
+        //// Second Maybe priority shelf building that have item customer needed.
 
-        BuildingView shelfBuilding = BuildingManager.Instance.GetShelfBuildingPriorityShelver();
+        //BuildingView shelfBuilding = BuildingManager.Instance.GetShelfBuildingPriorityShelver();
 
-        if(shelfBuilding != null)
-        {
-            foreach (var item in Commands)
-            {
-                if(GameHelper.GetStringSplitSpaceRemoveLast(item.CodeName) == shelfBuilding.CodeName)
-                {
-                    //SetActiveRoutineCommand(item);
-                    GetActiveRoutineCommand().CompleteCommand(false);
-                    return item;
-                }
-            }
-        }
+        //if(shelfBuilding != null)
+        //{
+        //    foreach (var item in Commands)
+        //    {
+        //        if(GameHelper.GetStringSplitSpaceRemoveLast(item.CodeName) == shelfBuilding.CodeName)
+        //        {
+        //            //SetActiveRoutineCommand(item);
+        //            GetActiveRoutineCommand().CompleteCommand(false);
+        //            return item;
+        //        }
+        //    }
+        //}
         return null;
     }
     public CommandData GetCommandDataSupportShelfBuilding(string commandCodeName)

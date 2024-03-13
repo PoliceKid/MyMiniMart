@@ -22,10 +22,14 @@ public class CashierDeskController : BuildingController
     }
     public override QueueSlotDataModel AddUnitToQueueSlot(ActionType type, UnitController unit)
     {     
-        if (!SlotCustomer.IsOccupied)
+        if (!SlotCustomer.IsOccupied && type == ActionType.Input)
         {
             BuildingData.AddUnitToQueueSlot(type, unit, SlotCustomer);
-            CustomerController.ActioningWithCashierDesk((CustomerController)unit, SlotCustomer);
+            if(BuildingData.GetUnitWithId(unit.unitData.Id) != null)
+            {
+                CustomerController.GotoCustomerSlot((CustomerController)unit, SlotCustomer);
+            }
+           
             return SlotCustomer;
         }
         else
@@ -62,6 +66,9 @@ public class CashierDeskController : BuildingController
             AddUnitToQueueSlot(type, unit);
         }
     }
+    
+
+
     public UnitController GetNextUnitAddToSlotCustomer()
     {
         if (BuildingData.GetTotalUnitJoinQueue(ActionType.Input) == 0) return null;
@@ -69,7 +76,8 @@ public class CashierDeskController : BuildingController
     }
     public override bool CheckUnitCanProcessItem(string Id)
     {
-        return CheckSlotCustomerHasUnit(Id);
+        return CheckSlotCustomerHasUnit(Id) ;
+    
     }
     public virtual bool CheckSlotCustomerHasUnit(string Id)
     {
@@ -78,11 +86,53 @@ public class CashierDeskController : BuildingController
     }
     public override void HandleCashierDeskProcessing()
     {
-       // Add condition have unit standing ong cashier slot
+        // Add condition have unit standing ong cashier slot
+        if (!BuildingData.CheckContaintUnitWithActionType(ActionType.Process)) return;
+        if (!CheckAvaliableSlotItemForProcessing()) return;
+        var InputSlotItems = GetItemSlots(ItemSlotType.Input);
+        foreach (var InputSlotItem in InputSlotItems)
+        {
+            var slotItemOccupied = BuildingData.GetListOccupiedSlotItems(InputSlotItem.Value);
+            foreach (var slotItem in slotItemOccupied)
+            {
+                var item = slotItem.OccupierItem;
+                if (item != null)
+                {
+                    RemoveItemAwaySlot(ItemSlotType.Input, slotItem.OccupierItem.itemData.Id, out ItemController ItemRemove);
+                    if (ItemRemove != null)
+                    {
+                        BuildingView.MoveItemToModelProcess(item);
+                    }
 
+                }
+                var outputItemConfigs = GetItemSlots(ItemSlotType.Output).Keys;
+                if (outputItemConfigs != null)
+                {
+                    foreach (var outputItem in outputItemConfigs)
+                    {
+                        if (CheckFreeSlotToAddItem(ItemSlotType.Output, outputItem))
+                        {
+                            //Create item
+                            var itemView = SpawnerManager.CreateItemView(outputItem, Vector3.zero, BuildingView.transform);
+                            if (itemView != null)
+                            {
+                                AddItemToSlot(ItemSlotType.Output, itemView.ItemController, out ItemSlotDataModel slotAddItem);
+
+                                //Call View
+                                if (slotAddItem != null)
+                                    BuildingView.AddItemToOutput( itemView, slotAddItem);
+
+                            }
+
+
+                        }
+                    }
+                
+
+                }
+            }
+        }
     }
-    public override void Processing()
-    {
-        base.Processing();
-    }
+    
+
 }

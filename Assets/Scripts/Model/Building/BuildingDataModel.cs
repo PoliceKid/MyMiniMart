@@ -85,7 +85,7 @@ public class BuildingDataModel
         }
     }
     #endregion
-    #region ACTION API
+    #region ACTION API FUNCTION
     public QueueSlotDataModel GetQueueSlotFree(ActionType actionType)
     {
         if (!QueueSlots.ContainsKey(actionType.ToString())) return null;
@@ -103,12 +103,7 @@ public class BuildingDataModel
         if (!QueueSlots.ContainsKey(actionType.ToString())) return null;
         return QueueSlots[actionType.ToString()].Where(x => x.IsOccupied).Select(x => x.OccupierUnit).ToList();
     }
-    public bool CheckCanJoinQueueSlot(ActionType actionType)
-    {
-        if (!QueueSlots.ContainsKey(actionType.ToString())) return false;
-        var listQueueSlot = QueueSlots[actionType.ToString()];
-        return listQueueSlot.Any(x => !x.IsOccupied);
-    }
+
     public QueueSlotDataModel AddUnitToQueueSlot(ActionType type, UnitController unit)
     {
         QueueSlotDataModel queueSlotFree = GetQueueSlotFree(type);
@@ -183,7 +178,7 @@ public class BuildingDataModel
         return null;
     }
     #endregion
-    #region API FUNCTION
+    #region ITEM API FUNCTION
     public Dictionary<string, List<ItemSlotDataModel>> GetItemSlots(ItemSlotType type)
     {
         switch (type)
@@ -291,8 +286,8 @@ public class BuildingDataModel
             ItemSlotDataModel freeSlot = GetFreeSlotItems(itemSlots[codeName]);
             if (freeSlot == null) return null;        
             freeSlot.SetOccupier(item);
-            OnUpdateItem?.Invoke(this.CodeName);
             AddSlotItemMap(item);
+            OnUpdateItem?.Invoke(this.CodeName);
             return freeSlot;
 
         }
@@ -389,6 +384,18 @@ public class BuildingDataModel
             return false;
         }
         return itemSlots.ContainsKey(codeName);
+    }
+    public bool CheckCanJoinQueueSlot(ActionType actionType)
+    {
+        if (!QueueSlots.ContainsKey(actionType.ToString())) return false;
+        var listQueueSlot = QueueSlots[actionType.ToString()];
+        return listQueueSlot.Any(x => !x.IsOccupied);
+    }
+    public bool CheckContaintUnitWithActionType(ActionType actionType)
+    {
+        if (!QueueSlots.ContainsKey(actionType.ToString())) return false;
+        var listQueueSlot = QueueSlots[actionType.ToString()];
+        return listQueueSlot.Any(x => x.IsOccupied);
     }
     #endregion
 

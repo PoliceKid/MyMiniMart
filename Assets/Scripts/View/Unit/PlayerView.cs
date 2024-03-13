@@ -1,7 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class PlayerView : UnitView
 {
 
@@ -54,10 +55,11 @@ public class PlayerView : UnitView
         {
             
             targetBuildingView?.OnPlayerInteract(1.2f);
-            TimerHelper.instance.StartTimer(0.3f, () =>
-            {
-                targetBuildingAction = targetBuildingView;
-            });
+            targetBuildingAction = targetBuildingView;
+            //TimerHelper.instance.StartTimer(0.3f, () =>
+            //{
+                
+            //});
           
         }
     }
@@ -66,13 +68,12 @@ public class PlayerView : UnitView
     private void OnTriggerStay(Collider other)
     {
         if(targetBuildingAction != null)
-        {
-            //TimerHelper.instance.StartTimer(1f, HandleAction);
+        {            
             HandleAction();
         }
 
     }
-
+    
     private void HandleAction()
     {
         Vector3 currentPlayerPosition = transform.position;
@@ -84,17 +85,14 @@ public class PlayerView : UnitView
             PointTriggerAction nearestActionPoint = targetBuildingAction.FindNearestActionPointOndistance(transform.position, lastActionType);
             if (nearestActionPoint != null)
             {
-
                 ActionType type = GameHelper.ConvertStringToEnum(nearestActionPoint.CodeName);
                 switch (type)
                 {
                     case ActionType.Input:
-                        AddItemToBuilding(targetBuildingAction);
-                        lastActionType = ActionType.Input.ToString();
+                        AddItemToBuilding(targetBuildingAction);                        
                         break;
                     case ActionType.Output:
-                        GetItemFromBuilding(targetBuildingAction);
-                        lastActionType = ActionType.Output.ToString();
+                        GetItemFromBuilding(targetBuildingAction);                        
                         break;
                     case ActionType.Thief:
                         break;
@@ -103,6 +101,7 @@ public class PlayerView : UnitView
                     default:
                         break;
                 }
+                lastActionType = type.ToString();
 
             }
 
@@ -115,4 +114,5 @@ public class PlayerView : UnitView
         targetBuildingAction = null;
         lastActionType = "";
     }
+ 
 }

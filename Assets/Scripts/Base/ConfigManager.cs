@@ -103,10 +103,6 @@ public class BuildingConfig : BaseConfig
         var itemConfig = listItemConfig.FirstOrDefault(x => x.CodeName == codeName);
         return itemConfig;
     }
-    public bool CheckHasItemConfig(string ItemSlotTypecodeName, string codeName)
-    {
-        return GetItemConfig(ItemSlotTypecodeName, codeName) != null;
-    }
 }
 public class ActivityConfig:BaseConfig
 {
